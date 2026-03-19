@@ -12,7 +12,7 @@ export const labEntries: LabEntry[] = [
     title: "TEDx Talk: Revolution for Dummies",
     description:
       "A step-by-step guide on how to revolutionize your world, your dreams, and why being a revolutionary might be the best thing for you.",
-    tag: "Talk · TEDx · 2019",
+    tag: "Talk · TEDxUTA · 2018",
     link: "https://www.ted.com/talks/jj_eromonsele_revolution_for_dummies",
   },
   {

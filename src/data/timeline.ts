@@ -68,10 +68,10 @@ export const timeline: TimelineEntry[] = [
   },
   {
     organization: "University of Texas at Arlington",
-    role: "BA Marketing · Campus Builder",
-    subtitle: "2 Orgs Founded · Student Government · 2 Jobs",
+    role: "BA Marketing · Campus Builder · TEDx Speaker",
+    subtitle: "TEDxUTA · 2 Orgs Founded · Euphoria · Student Government",
     description:
-      "Co-founded The Football Team: A Creative Collective (still active). Created The Speakeasy Open Mic — a nomadic open mic series for poets, bands, and artists. President, Business Constituency Council. Cool Speed Fellowship. All while working two jobs — Starbucks and Campus Recreation. \"I've been told before that you can't create culture, and I vehemently disagree.\"",
-    stat: "2 ORGS FOUNDED · 2 JOBS · STUDENT BODY PRESIDENT",
+      "TEDx speaker — \"Revolution for Dummies\" (2018). Co-founded The Football Team: A Creative Collective (still active). Created The Speakeasy Open Mic and Euphoria, an interactive art show cultivating Arlington's creative scene. President, Business Constituency Council. Cool Speed Fellowship. All while working two jobs. \"I've been told before that you can't create culture, and I vehemently disagree.\"",
+    stat: "TEDX SPEAKER · 2 ORGS FOUNDED · EUPHORIA CREATOR",
   },
 ];
