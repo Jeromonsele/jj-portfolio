@@ -18,7 +18,7 @@ export default function Contact() {
           Let&apos;s talk.
         </h1>
         <p className="text-lg text-brand-gray-600 max-w-lg leading-relaxed mb-12">
-          I take on select projects and advisory work. If you&apos;re building something real, I want to hear about it.
+          I&apos;m a founder, operator, and builder based in Dallas. If you&apos;re building something that needs operational thinking, systems design, or someone who can see the architecture underneath the surface, I want to hear about it.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a

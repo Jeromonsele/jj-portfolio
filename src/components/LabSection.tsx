@@ -10,7 +10,7 @@ export function LabSection() {
 
   return (
     <section id="lab" className="bg-black text-warm-white">
-      <SectionLabel number="04" label="THE LAB" dark />
+      <SectionLabel number="07" label="THE LAB" dark />
       <div className="max-w-[1200px] mx-auto px-10 pb-16">
         <ScrollReveal>
           <h2 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase tracking-tighter leading-[0.85] mb-3">

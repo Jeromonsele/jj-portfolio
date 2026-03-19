@@ -5,8 +5,10 @@ import { MobileMenu } from "./MobileMenu";
 
 const links = [
   { label: "Story", href: "#story" },
+  { label: "Principles", href: "#principles" },
   { label: "Journey", href: "#journey" },
   { label: "Work", href: "#work" },
+  { label: "Thinking", href: "#thinking" },
   { label: "Lab", href: "#lab" },
 ];
 

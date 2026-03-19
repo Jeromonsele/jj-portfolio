@@ -16,7 +16,7 @@ export function WorkSection() {
         01
       </div>
 
-      <SectionLabel number="03" label="SELECTED WORK" />
+      <SectionLabel number="05" label="SELECTED WORK" />
       <div className="max-w-[1200px] mx-auto px-10 pb-16 relative z-10">
         <ScrollReveal>
           <h2 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase tracking-tighter leading-[0.85] mb-12">

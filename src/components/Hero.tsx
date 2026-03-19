@@ -12,17 +12,26 @@ export function Hero() {
           transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.1 }}
           className="font-mono text-[13px] text-orange uppercase tracking-[3px] mb-6"
         >
-          // PMP · Six Sigma · TEDx Speaker · AI Policy Author · MS Org Change
+          // Builder · Operator · Founder
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 300, damping: 25, delay: 0.2 }}
-          className="text-[clamp(3rem,7vw,7rem)] font-black uppercase leading-[0.85] tracking-tighter mb-10"
+          className="text-[clamp(3rem,7vw,7rem)] font-black uppercase leading-[0.85] tracking-tighter mb-6"
         >
-          The gap is never<br />the technology.<br />It&apos;s the operating<br />system around it.
+          I&apos;ve built systems<br />across six industries.<br />The failure pattern<br />is the same every time.
         </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.3 }}
+          className="font-mono text-[11px] text-brand-gray-600 uppercase tracking-[2px] mb-6"
+        >
+          PMP · Six Sigma Green Belt · TEDx Speaker · MS Organizational Change &amp; PM
+        </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -30,7 +39,7 @@ export function Hero() {
           transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.4 }}
           className="text-lg text-brand-gray-600 max-w-xl leading-relaxed mb-6"
         >
-          I&apos;ve shipped 25+ systems across aerospace, banking, fine art, automotive, and home services. The failure pattern is identical every time. I fix it.
+          Aerospace, banking, fine art, automotive, field service software, home services. Most people look at that list and see a scattered career. I look at it and see the same system breaking in the same places.
         </motion.p>
 
         <motion.p
@@ -39,7 +48,7 @@ export function Hero() {
           transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.5 }}
           className="font-mono text-[12px] text-brand-gray-600 uppercase tracking-[2px]"
         >
-          Currently: building a 1.8M-property platform · writing about AI-augmented operations · advising on system design
+          Currently building a 1.8M-property platform and writing about what happens when operators get access to AI.
         </motion.p>
       </div>
     </section>

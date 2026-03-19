@@ -22,7 +22,7 @@ export function CredibilityBar() {
       <div className="max-w-[1200px] mx-auto px-10">
         <div className="flex items-center gap-10 overflow-x-auto">
           <span className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px] shrink-0">
-            As seen in
+            As featured in
           </span>
           <div className="flex items-center gap-8">
             {features.map((f) => (

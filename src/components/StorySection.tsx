@@ -6,11 +6,11 @@ import { ScrollReveal } from "./ScrollReveal";
 export function StorySection() {
   return (
     <section id="story">
-      <SectionLabel number="02" label="THE STORY" />
+      <SectionLabel number="03" label="THE STORY" />
       <div className="max-w-[1200px] mx-auto px-10 pb-16">
         <ScrollReveal>
           <h2 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase tracking-tighter leading-[0.85] mb-10">
-            From Campus<br />Builder to<br />Company Founder.
+            Six Industries.<br />Same Patterns.
           </h2>
         </ScrollReveal>
         <div>

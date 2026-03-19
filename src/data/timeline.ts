@@ -16,11 +16,11 @@ export interface TimelineEntry {
 export const timeline: TimelineEntry[] = [
   {
     organization: "ASG Managed Services",
-    role: "Project Manager → Program Manager",
-    subtitle: "Built PM infrastructure from scratch · AI Policy Author",
+    role: "Program Manager, Managed Services",
+    subtitle: "Built PM infrastructure from scratch · AI Governance Author",
     description:
-      "Walked into chaos, built the project management system. Managed 20+ simultaneous projects. Got promoted to program manager. Wrote the company's first AI framework and policy. Predicted the overcorrection before the market caught up.",
-    stat: "20+ PROJECTS · AI POLICY AUTHOR",
+      "Ran a portfolio of 15-20 simultaneous SaaS and infrastructure programs across 5 departments. Partnered with VPs to unify operations under a single governance model. Authored ASG's first AI governance framework: six pillars, three-phase rollout, 80% adoption. Most comparable firms were still debating whether to let employees use ChatGPT. We were building the operating system for how the whole company would use AI.",
+    stat: "15-20 PROGRAMS · AI GOVERNANCE · 80% ADOPTION",
     link: "https://www.asgllc.com/managed-services/",
   },
   {
@@ -28,7 +28,7 @@ export const timeline: TimelineEntry[] = [
     role: "Producer, Nasher Prize",
     subtitle: "Theaster Gates Afro-Mingei (2022-2023) · Otobong Nkanga (2025)",
     description:
-      "Produced two Nasher Prize experiences. Theaster Gates' Afro-Mingei, a restaurant concept fusing Japanese and African American culture, DJ nights with curated vinyl, fireside chats. Then Otobong Nkanga's 2025 Prize. 5,000+ attendees. Press: Surface Magazine, KERA News, ARTnews, NYT.",
+      "Produced two Nasher Prize experiences. Theaster Gates' Afro-Mingei, a restaurant concept fusing Japanese and African American culture with DJ nights, curated vinyl, and fireside chats. Then Otobong Nkanga's 2025 Prize. 5,000+ attendees. Press coverage in the New York Times, Surface Magazine, ARTnews, and KERA News. What producing art taught me about operations: the skills are identical. The context is different. The discipline is the same.",
     stat: "5,000+ ATTENDEES · NYT COVERAGE",
     link: "https://www.nashersculpturecenter.org/programs-events/programs-list/program/id/307",
     media: [
@@ -45,15 +45,15 @@ export const timeline: TimelineEntry[] = [
     role: "Infrastructure & Early Cloud Dev",
     subtitle: "Data Center Management · Contract",
     description:
-      "Managed data center rollouts and infrastructure that later became part of Bank of America's AI operations. Big scale, real stakes.",
+      "Managed data center rollouts and infrastructure. My exposure to what 'enterprise scale' actually means. A bad deployment here doesn't break a dashboard. It affects millions of transactions.",
     link: "https://careers.bankofamerica.com/en-us/company/organization/technology",
   },
   {
-    organization: "Ranstad",
+    organization: "Randstad",
     role: "Analyst",
     subtitle: "CVS · GPMC · Root Cause Analysis",
     description:
-      "Managed enterprise accounts. Got good at Monday.com, learned root cause analysis. This is where I got sharp analytically. Led me to PMP and Six Sigma.",
+      "Enterprise account management and root cause analysis. Looking at a broken process, tracing it back to the source, fixing the system rather than the symptom. Led directly to PMP and Six Sigma.",
     link: "https://www.randstadusa.com/",
   },
   {
@@ -61,7 +61,7 @@ export const timeline: TimelineEntry[] = [
     role: "Social Media & Special Projects Liaison",
     subtitle: "The #1 Volume Chevrolet Dealer in the World",
     description:
-      "Built the first story-driven social media strategy for a 65,000 sq ft dealership, 22-time consecutive Dealer of the Year. Ran the C8 mid-engine Corvette reveal (4,500+ attendees). Worked with celebrities. Created the Saturday Fair. Turned a car lot into a place people actually wanted to be.",
+      "Built the first story-driven social media strategy for the #1 volume Chevy dealer in the world. 65,000 sq ft, 22-time consecutive Dealer of the Year. Ran the C8 mid-engine Corvette reveal (4,500+ people showed up). Created the Saturday Fair. Turned a car lot into a place people actually wanted to be. This role taught me that brand isn't marketing. It's how an organization operates in public.",
     stat: "~1M IMPRESSION GROWTH",
     link: "https://www.classicchevrolet.com",
     media: [
@@ -75,7 +75,7 @@ export const timeline: TimelineEntry[] = [
     role: "PM, Systems Design & SEO",
     subtitle: "Local Business Consulting · First Book",
     description:
-      "PM, systems design, and SEO for local businesses. Wrote my first book, a guide to PM and systems design for non-linear thinkers. This is when I went from corporate PM to entrepreneur.",
+      "Consulted for local businesses on PM, systems design, and SEO. Wrote my first book, a guide for non-linear thinkers. This is when I stopped thinking of myself as a corporate PM and started thinking of myself as someone who builds things.",
     link: "https://theverygoodguys.com",
   },
   {
@@ -83,7 +83,7 @@ export const timeline: TimelineEntry[] = [
     role: "Communications Intern → PM Discovery",
     subtitle: "Navy Capture Project · COVID Era",
     description:
-      "Pitched a campaign strategy to win a defense contract at aerospace scale. First time seeing large-scale project management up close. Realized legacy media was five years behind. Fell in love with PM here.",
+      "Pitched a campaign strategy to win a Navy defense contract at aerospace scale. I was an intern. The scope of what I was looking at, the multi-year timelines, the stakeholder complexity, the regulatory layers, fundamentally changed how I understood project management.",
     link: "https://airbusus.com/",
   },
   {
@@ -91,7 +91,7 @@ export const timeline: TimelineEntry[] = [
     role: "MS Organizational Change & PM",
     subtitle: "Master's Program",
     description:
-      "Where the 4 Gaps Framework started as theory. Researched charismatic leadership dependency and why organizations need systems that work without one person running everything.",
+      "Where the 4 Gaps Framework started as academic theory. My research focused on charismatic leadership dependency. Why organizations fall apart when a single key person leaves. That research became the diagnostic framework I use in consulting today.",
     link: "https://www.dbu.edu/graduate/degree-programs/ms-organization-change-project-management/",
   },
   {

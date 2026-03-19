@@ -4,14 +4,12 @@ import { ScrollReveal } from "./ScrollReveal";
 import { SectionLabel } from "./SectionLabel";
 
 const milestones = [
-  { month: "Jul 2025", label: "Day Zero", detail: "Applied agentic workflows to ship first production app with zero prior code. Wrong Door Club + LPM v1.", num: "01" },
-  { month: "Aug 2025", label: "First Iteration Cycle", detail: "Responsive polish. Figured out deployment workflows. Started shipping fast.", num: "02" },
-  { month: "Oct 2025", label: "Multi-Project Ops", detail: "3 apps deployed in one month. 75 Hard Tracker, CC Planning, AIPromptDoc. Running projects in parallel now.", num: "03" },
-  { month: "Nov 2025", label: "AI + 3D + Payments", detail: "4 products shipped. Gemini AI, Three.js 3D, OpenAI + Stripe. Any one of these is a sprint for a dev team.", num: "04" },
-  { month: "Dec 2025", label: "Real Products", detail: "Custom domains. Multi-page apps. Periods (getperiods.app), Life After 50. These aren't demos anymore.", num: "05" },
-  { month: "Jan 2026", label: "Revenue", detail: "First paid client site live at www.chrisacpa.com. Went from zero code to client revenue in 6 months.", num: "06" },
-  { month: "Feb 2026", label: "Data Infrastructure", detail: "SearchFundDB: 4,849 funds loaded. PressureX lead engine. Company X-Ray. Real databases, real auth, real pipelines.", num: "07" },
-  { month: "Mar 2026", label: "Platform Scale", detail: "TVGHC: 1.8M property records, 4 counties, automated lead pipeline, 5-star reviews. Nine months from first line of code.", num: "08" },
+  { month: "Jul 2025", label: "Day Zero", detail: "Applied agentic workflows to ship first production app with zero prior code. Wrong Door Club + LPM v1. Figured out deployment workflows. Started shipping fast.", num: "01" },
+  { month: "Oct 2025", label: "Building Momentum", detail: "Four apps shipped. Fitness tracker, content calendar, prompt engineering tool. Deployment workflows clicking into place.", num: "02" },
+  { month: "Nov 2025", label: "AI Integration", detail: "Gemini AI, Three.js, OpenAI + Stripe. Four products in one month. Art and tech finally converging the way I'd always imagined.", num: "03" },
+  { month: "Jan 2026", label: "First Paid Client", detail: "AC Christopher CPA. Professional services site generating real revenue. First time someone paid me to build.", num: "04" },
+  { month: "Feb 2026", label: "Data Products", detail: "SearchFundDB (4,849 funds), PressureX lead engine, Company X-Ray. Real databases, real auth, real pipelines.", num: "05" },
+  { month: "Mar 2026", label: "Platform Scale", detail: "The Very Good Home Company. 1.8M property records, 4 counties, automated lead pipeline. The thesis proved out.", num: "06" },
 ];
 
 const techLearned = [
@@ -26,19 +24,19 @@ export function JourneySection() {
 
   return (
     <section id="journey" className="bg-black text-warm-white">
-      <SectionLabel number="02.5" label="THE BUILD JOURNEY" dark />
+      <SectionLabel number="04" label="THE BUILD JOURNEY" dark />
       <div className="max-w-[1200px] mx-auto px-10 pb-16">
         <ScrollReveal>
           <h2 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase tracking-tighter leading-[0.85] mb-4">
-            What Happens When<br />an Operator Gets AI.
+            9 Months.<br />Zero to Production.
           </h2>
           <p className="text-white/50 max-w-xl mb-12 text-lg leading-relaxed">
-            I have a PMP, Six Sigma, and a master&apos;s in organizational change. In July 2025, I wrote my first line of code using agentic AI. Nine months later I had a production platform with 1.8M records and 20+ deployed products. A traditional dev team would need two years and a six-figure budget. AI doesn&apos;t replace operators. It reveals who actually knows how to operate.
+            I started coding as a kid. Khan Academy, building things in browsers, trying to make art through code. I was never a traditional coder, but I understood the frameworks. For most of my career, the gap between what I could envision and what I could ship was other people&apos;s engineering time. AI closed that gap. In July 2025, I deployed my first real web application. By March 2026, I was running a platform with 1.8 million property records.
           </p>
         </ScrollReveal>
 
         {/* Timeline */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           {milestones.map((m, i) => {
             const progress = ((i + 1) / totalMilestones) * 100;
             return (

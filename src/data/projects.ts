@@ -24,6 +24,17 @@ export const projects: Project[] = [
     tier: "flagship",
   },
   {
+    slug: "asg-ai-governance",
+    title: "ASG — AI Governance Framework",
+    tag: "Enterprise · AI Strategy · 6 Pillars · 80% Adoption",
+    description:
+      "Built a six-pillar AI governance framework for a managed services company. General use, creative workflows, business operations, client solutions, security/compliance, training. Three-phase maturity roadmap. 80% adoption in Phase 1.",
+    previewType: "terminal",
+    previewText: "AI Governance\n6 Pillars · 80%",
+    previewStat: "80% Adoption",
+    tier: "flagship",
+  },
+  {
     slug: "tvgg",
     title: "The Very Good Consulting — 4 Gaps Framework",
     tag: "Consulting · Framework · Proprietary IP",
@@ -74,7 +85,7 @@ export const projects: Project[] = [
     title: "LPM SOP Platform",
     tag: "SaaS · FastAPI · Docker · 13 Services",
     description:
-      "SOP management platform running 13 Docker services: Postgres, Redis, FastAPI, Celery, Nginx, Traefik, Prometheus, Grafana, ELK. The biggest thing I've built architecturally.",
+      "SOP management platform running 13 Docker services: Postgres, Redis, FastAPI, Celery, Nginx, Traefik, Prometheus, Grafana, ELK. It's not pretty, but it works.",
     image: "/projects/lpm-hero.png",
     link: "https://lpm-2.vercel.app",
     tier: "flagship",
