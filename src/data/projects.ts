@@ -149,4 +149,54 @@ export const projects: Project[] = [
     previewText: "$ company-xray\n→ analyzing...\n✓ report ready",
     link: "https://company-xray.vercel.app",
   },
+  {
+    slug: "wrong-door-club",
+    title: "Wrong Door Club",
+    tag: "Web · React · Responsive Design · Jul 2025",
+    description:
+      "One of the earliest builds — responsive web app with final polish before deploy. Where the coding journey began, before agentic tools changed everything.",
+    previewType: "gradient",
+    previewText: "Wrong\nDoor Club",
+    link: "https://wrongdoorclub.vercel.app",
+  },
+  {
+    slug: "aipromptdoc",
+    title: "AIPromptDoc",
+    tag: "Tool · Python 3.12 · Prompt Engineering",
+    description:
+      "Prompt engineering documentation tool. Python backend with all imports fixed for production. Where the interest in AI tooling and prompt design began.",
+    previewType: "terminal",
+    previewText: "$ aipromptdoc\n→ deploy ready\n✓ Python 3.12",
+    link: "https://aipromptdoc.vercel.app",
+  },
+  {
+    slug: "cc-planning",
+    title: "CC Planning",
+    tag: "Tool · React · Content Calendar",
+    description:
+      "Content calendar planning tool. Refactored for error handling, initialization flow, and memory leak prevention. Early React architecture learning.",
+    previewType: "light",
+    previewText: "CC\nPlanning",
+    link: "https://cc-planning.vercel.app",
+  },
+  {
+    slug: "75-hard",
+    title: "75 Hard Couples Tracker",
+    tag: "PWA · HTML · First Deploy · Oct 2025",
+    description:
+      "PWA fitness tracker for couples doing the 75 Hard challenge. The very first Vercel deployment — October 2025. Where it all started.",
+    previewType: "dark",
+    previewText: "75 HARD\nDay 1",
+    link: "https://75-hard-couples-tracker-5wcu.vercel.app",
+  },
+  {
+    slug: "vibe-receipt",
+    title: "Vibe Receipt Generator",
+    tag: "Experiment · v0 · AI-Assisted Code",
+    description:
+      "Fun receipt generator built with v0. Playing with AI-assisted code generation before going deep on agentic workflows.",
+    previewType: "dark",
+    previewText: "Vibe\nReceipt",
+    link: "https://v0-vibe-receipt-generator.vercel.app",
+  },
 ];

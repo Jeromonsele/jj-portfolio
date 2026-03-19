@@ -4,12 +4,14 @@ import { ScrollReveal } from "./ScrollReveal";
 import { SectionLabel } from "./SectionLabel";
 
 const milestones = [
-  { month: "Oct 2025", label: "First Deploy", detail: "75 Hard Tracker — renamed an HTML file and pushed to Vercel. The beginning." },
-  { month: "Nov 2025", label: "React + Framer Motion", detail: "Haus of Duas, Emma Project (Three.js), AI Confession Booth. Learning component architecture and animation." },
-  { month: "Dec 2025", label: "Multi-Page Apps", detail: "Life After 50, Periods (custom domain). Understanding routing, smooth scroll, real product thinking." },
-  { month: "Jan 2026", label: "Client Revenue", detail: "AC Christopher CPA (www.chrisacpa.com). First paid client site. Professional services design." },
-  { month: "Feb 2026", label: "Full-Stack + AI", detail: "PressureX Lead Engine, SearchFundDB (4,849 funds), Company X-Ray. Supabase, auth, data pipelines." },
-  { month: "Mar 2026", label: "Platform Scale", detail: "TVGHC — 1.8M property records, 4 counties, automated lead pipeline. From HTML rename to production platform in 6 months." },
+  { month: "Jul 2025", label: "Day Zero", detail: "Wrong Door Club + LPM v1 — first real web apps. Learning to serve JS/CSS, responsive design. The spark." },
+  { month: "Aug 2025", label: "Responsive Polish", detail: "Wrong Door Club final responsive polish. Understanding mobile-first design and deployment workflows." },
+  { month: "Oct 2025", label: "First Solo Deploys", detail: "75 Hard Couples Tracker, CC Planning, AIPromptDoc. Renaming HTML files, fixing memory leaks, learning Python deploys." },
+  { month: "Nov 2025", label: "React + 3D + AI", detail: "Haus of Duas (Gemini AI), Emma Project (Three.js), AI Confession Booth (OpenAI + Stripe), Vibe Receipt Generator (v0)." },
+  { month: "Dec 2025", label: "Real Products", detail: "Life After 50, Periods (getperiods.app — custom domain). Multi-page routing, smooth scroll, product thinking." },
+  { month: "Jan 2026", label: "Client Revenue", detail: "AC Christopher CPA (www.chrisacpa.com). First paid client site. Professional services design that generates revenue." },
+  { month: "Feb 2026", label: "Full-Stack + Data", detail: "PressureX Lead Engine, SearchFundDB (4,849 funds), Company X-Ray. Supabase, auth, data pipelines, business intelligence." },
+  { month: "Mar 2026", label: "Platform Scale", detail: "TVGHC — 1.8M property records, 4 counties, automated lead pipeline. From zero code to production platform in 9 months." },
 ];
 
 const techLearned = [
@@ -26,15 +28,15 @@ export function JourneySection() {
       <div className="max-w-[1200px] mx-auto px-10 pb-16">
         <ScrollReveal>
           <h2 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase tracking-tighter leading-[0.85] mb-4">
-            6 Months.<br />20+ Deploys.<br />Zero to Platform.
+            9 Months.<br />20+ Deploys.<br />Zero to Platform.
           </h2>
           <p className="text-brand-gray-600 max-w-xl mb-12 text-lg leading-relaxed">
-            In October 2025, I renamed an HTML file and pushed it to Vercel. By March 2026, I was shipping a platform with 1.8 million property records. This is what happens when a project manager learns to build.
+            In July 2025, I deployed my first web app. By March 2026, I was shipping a platform with 1.8 million property records. This is what happens when a project manager learns to build.
           </p>
         </ScrollReveal>
 
         {/* Timeline */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
           {milestones.map((m, i) => (
             <ScrollReveal key={m.month} delay={i * 0.06}>
               <div className="border border-brand-gray-300 p-6">
