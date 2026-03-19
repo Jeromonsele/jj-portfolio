@@ -21,7 +21,7 @@ export const timeline: TimelineEntry[] = [
     description:
       "Walked into chaos, built the project management system. Managed 20+ simultaneous projects. Got promoted to program manager. Wrote the company's first AI framework and policy. Predicted the overcorrection before the market caught up.",
     stat: "20+ PROJECTS · AI POLICY AUTHOR",
-    link: "https://asgitconsulting.com/",
+    link: "https://www.asgllc.com/managed-services/",
   },
   {
     organization: "Nasher Sculpture Center",
