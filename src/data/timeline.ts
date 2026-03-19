@@ -21,6 +21,7 @@ export const timeline: TimelineEntry[] = [
     description:
       "Walked into chaos, built the project management system. Managed 20+ simultaneous projects. Got promoted to program manager. Wrote the company's first AI framework and policy. Predicted the overcorrection before the market caught up.",
     stat: "20+ PROJECTS · AI POLICY AUTHOR",
+    link: "https://asgitconsulting.com/",
   },
   {
     organization: "Nasher Sculpture Center",
@@ -45,6 +46,7 @@ export const timeline: TimelineEntry[] = [
     subtitle: "Data Center Management · Contract",
     description:
       "Managed data center rollouts and infrastructure that later became part of Bank of America's AI operations. Big scale, real stakes.",
+    link: "https://careers.bankofamerica.com/en-us/company/organization/technology",
   },
   {
     organization: "Ranstad",
@@ -52,6 +54,7 @@ export const timeline: TimelineEntry[] = [
     subtitle: "CVS · GPMC · Root Cause Analysis",
     description:
       "Managed enterprise accounts. Got good at Monday.com, learned root cause analysis. This is where I got sharp analytically. Led me to PMP and Six Sigma.",
+    link: "https://www.randstadusa.com/",
   },
   {
     organization: "Classic Chevrolet",
@@ -73,6 +76,7 @@ export const timeline: TimelineEntry[] = [
     subtitle: "Local Business Consulting · First Book",
     description:
       "PM, systems design, and SEO for local businesses. Wrote my first book, a guide to PM and systems design for non-linear thinkers. This is when I went from corporate PM to entrepreneur.",
+    link: "https://theverygoodguys.com",
   },
   {
     organization: "Airbus",
@@ -80,6 +84,7 @@ export const timeline: TimelineEntry[] = [
     subtitle: "Navy Capture Project · COVID Era",
     description:
       "Pitched a campaign strategy to win a defense contract at aerospace scale. First time seeing large-scale project management up close. Realized legacy media was five years behind. Fell in love with PM here.",
+    link: "https://airbusus.com/",
   },
   {
     organization: "Dallas Baptist University",
@@ -87,6 +92,7 @@ export const timeline: TimelineEntry[] = [
     subtitle: "Master's Program",
     description:
       "Where the 4 Gaps Framework started as theory. Researched charismatic leadership dependency and why organizations need systems that work without one person running everything.",
+    link: "https://www.dbu.edu/graduate/degree-programs/ms-organization-change-project-management/",
   },
   {
     organization: "University of Texas at Arlington",
