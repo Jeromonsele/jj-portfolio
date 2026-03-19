@@ -62,8 +62,8 @@ export const timeline: TimelineEntry[] = [
   },
   {
     organization: "Randstad",
-    role: "Analyst",
-    subtitle: "CVS · GPMC · Root Cause Analysis",
+    role: "Project Manager",
+    subtitle: "CVS · JPMC · Root Cause Analysis",
     description:
       "Enterprise account management and root cause analysis. Looking at a broken process, tracing it back to the source, fixing the system rather than the symptom. Led directly to PMP and Six Sigma.",
     link: "https://www.randstadusa.com/",
