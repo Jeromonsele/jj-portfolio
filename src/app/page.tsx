@@ -2,6 +2,7 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { NowSection } from "@/components/NowSection";
 import { StorySection } from "@/components/StorySection";
+import { JourneySection } from "@/components/JourneySection";
 import { WorkSection } from "@/components/WorkSection";
 import { LabSection } from "@/components/LabSection";
 import { Footer } from "@/components/Footer";
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <NowSection />
         <StorySection />
+        <JourneySection />
         <WorkSection />
         <LabSection />
       </main>

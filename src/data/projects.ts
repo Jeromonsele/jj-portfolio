@@ -109,4 +109,44 @@ export const projects: Project[] = [
     image: "/projects/ac-christopher-hero.png",
     link: "https://c-akhidenor-cpa.vercel.app",
   },
+  {
+    slug: "periods",
+    title: "Periods.",
+    tag: "Product · Next.js · Cross-Platform · Custom Domain",
+    description:
+      "Period tracking app with a custom domain (getperiods.app). Web + iOS. A personal product built to solve a real need.",
+    previewType: "dark",
+    previewText: "Periods.",
+    link: "https://getperiods.app",
+  },
+  {
+    slug: "life-after-50",
+    title: "Life After 50",
+    tag: "Web App · React · Smooth Scroll",
+    description:
+      "Multi-page web application with smooth scroll navigation. Built for an audience thinking about what comes next.",
+    previewType: "gradient",
+    previewText: "Life\nAfter 50",
+    link: "https://life-after50.vercel.app",
+  },
+  {
+    slug: "pressurex",
+    title: "PressureX — Lead Engine",
+    tag: "Lead Gen · Next.js · Supabase · High-Converting UI",
+    description:
+      "Lead generation engine built specifically for the insulation business. High-converting estimate UI. The tech layer behind TVGHC's customer acquisition.",
+    previewType: "dark",
+    previewText: "PressureX\nLead Engine",
+    link: "https://pressure-x-6ehl.vercel.app",
+  },
+  {
+    slug: "company-xray",
+    title: "Company X-Ray",
+    tag: "Tool · Business Intelligence",
+    description:
+      "Business intelligence tool for analyzing company data. Built during the consulting practice to diagnose operational issues faster.",
+    previewType: "terminal",
+    previewText: "$ company-xray\n→ analyzing...\n✓ report ready",
+    link: "https://company-xray.vercel.app",
+  },
 ];

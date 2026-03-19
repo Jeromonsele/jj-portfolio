@@ -60,4 +60,36 @@ export const labEntries: LabEntry[] = [
       "PM and systems design through the lens of non-linear thinking. How to build and build well.",
     tag: "Writing · In Progress",
   },
+  {
+    number: "008",
+    title: "CC Planning",
+    description:
+      "Content calendar planning tool. Error handling, initialization flows, memory leak prevention. One of the first real React apps.",
+    tag: "Tool · React · Early Build",
+    link: "https://cc-planning.vercel.app",
+  },
+  {
+    number: "009",
+    title: "75 Hard Couples Tracker",
+    description:
+      "PWA fitness tracker for couples doing the 75 Hard challenge together. My first Vercel deployment — Oct 2025.",
+    tag: "PWA · First Deploy · Oct 2025",
+    link: "https://75-hard-couples-tracker-5wcu.vercel.app",
+  },
+  {
+    number: "010",
+    title: "Vibe Receipt Generator",
+    description:
+      "Fun v0-built receipt generator. Playing with AI-assisted code generation before going deep on agentic workflows.",
+    tag: "Experiment · v0 · AI-Assisted",
+    link: "https://v0-vibe-receipt-generator.vercel.app",
+  },
+  {
+    number: "011",
+    title: "AIPromptDoc",
+    description:
+      "Prompt engineering documentation tool. Python 3.12 backend. Where the interest in AI tooling began.",
+    tag: "Tool · Python · Prompt Engineering",
+    link: "https://aipromptdoc.vercel.app",
+  },
 ];
