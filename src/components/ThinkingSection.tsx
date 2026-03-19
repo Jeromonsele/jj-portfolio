@@ -3,6 +3,17 @@ import { ScrollReveal } from "./ScrollReveal";
 
 const pieces = [
   {
+    title: "The Very Good Guys — Newsletter",
+    description: "Operations, AI, and building companies. Published on LinkedIn. I write about what I'm learning, what I'm getting wrong, and what I think is coming next.",
+    tag: "Newsletter · LinkedIn",
+    link: "https://linkedin.com/in/jordaneromonsele",
+  },
+  {
+    title: "How I Built an AI Governance Framework from Scratch",
+    description: "At ASG, 52% of teams were using AI tools with no oversight. I built a six-pillar governance framework, got it to 80% adoption, and learned a lot about how organizations actually change. This is that story.",
+    tag: "Article · Coming Soon",
+  },
+  {
     title: "The Agentic Coding Workflow",
     description: "I run 5 AI coding tools simultaneously. Claude Code, Cursor, Codex, Gemini, Qodo. Here's how they fit together and why the future of building belongs to operators who can see what needs to exist.",
     tag: "Article · Process",
@@ -15,7 +26,7 @@ const pieces = [
   },
   {
     title: "The Book (In Progress)",
-    description: "PM and systems design for people who don't think in straight lines. Who see connections instead of categories, and build frameworks instead of following them. Still writing it.",
+    description: "PM and systems design for people who don't think in straight lines. Who see connections instead of categories, and build frameworks instead of following them. Still writing it. Taking longer than I thought it would.",
     tag: "Writing · In Progress",
   },
 ];

@@ -17,7 +17,7 @@ export function LabSection() {
             The Lab.
           </h2>
           <p className="text-sm text-white/50 mb-10 max-w-md">
-            Experiments, tools, and things I think are cool. Updates as I build.
+            Experiments and side projects. Some of these are good. Some were learning exercises. I keep them here because the willingness to build things, even bad things, is part of the process.
           </p>
         </ScrollReveal>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">

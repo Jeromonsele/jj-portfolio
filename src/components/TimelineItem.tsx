@@ -16,6 +16,16 @@ export function TimelineItem({ entry }: { entry: TimelineEntry }) {
       <p className="text-sm text-brand-gray-600 mb-2">{entry.subtitle}</p>
       <p className="text-sm text-brand-gray-600 leading-relaxed max-w-xl">{entry.description}</p>
       {entry.stat && <StatBadge>{entry.stat}</StatBadge>}
+      {entry.testimonial && (
+        <div className="mt-4 border-l-2 border-orange/30 pl-4">
+          <p className="text-sm text-brand-gray-600 italic leading-relaxed">
+            &ldquo;{entry.testimonial.quote}&rdquo;
+          </p>
+          <p className="font-mono text-[10px] text-orange uppercase tracking-[1.5px] mt-2">
+            {entry.testimonial.name}, {entry.testimonial.title}
+          </p>
+        </div>
+      )}
       {entry.media && entry.media.length > 0 && (
         <div className="flex flex-wrap gap-2 mt-3">
           {entry.media.map((m) => (

@@ -3,6 +3,12 @@ export interface MediaLink {
   url: string;
 }
 
+export interface Testimonial {
+  quote: string;
+  name: string;
+  title: string;
+}
+
 export interface TimelineEntry {
   organization: string;
   role: string;
@@ -11,6 +17,7 @@ export interface TimelineEntry {
   stat?: string;
   link?: string;
   media?: MediaLink[];
+  testimonial?: Testimonial;
 }
 
 export const timeline: TimelineEntry[] = [
@@ -22,6 +29,11 @@ export const timeline: TimelineEntry[] = [
       "Ran a portfolio of 15-20 simultaneous SaaS and infrastructure programs across 5 departments. Partnered with VPs to unify operations under a single governance model. Authored ASG's first AI governance framework: six pillars, three-phase rollout, 80% adoption. Most comparable firms were still debating whether to let employees use ChatGPT. We were building the operating system for how the whole company would use AI.",
     stat: "15-20 PROGRAMS · AI GOVERNANCE · 80% ADOPTION",
     link: "https://www.asgllc.com/managed-services/",
+    testimonial: {
+      quote: "He brought structure and clarity to our initiatives, keeping us organized, focused, and always moving forward.",
+      name: "Reham Ayoub",
+      title: "Head of Talent Operations, ASG",
+    },
   },
   {
     organization: "Nasher Sculpture Center",
@@ -55,6 +67,11 @@ export const timeline: TimelineEntry[] = [
     description:
       "Enterprise account management and root cause analysis. Looking at a broken process, tracing it back to the source, fixing the system rather than the symptom. Led directly to PMP and Six Sigma.",
     link: "https://www.randstadusa.com/",
+    testimonial: {
+      quote: "JJ takes unfamiliar assignments and meticulously solves each issue. He creates solutions that anticipate future issues, not just the ones in front of him.",
+      name: "Ian Perkins-Smith",
+      title: "Associate, Sendero",
+    },
   },
   {
     organization: "Classic Chevrolet",
