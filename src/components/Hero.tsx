@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { CredentialBadge } from "./CredentialBadge";
 
-const credentials = ["PMP Certified", "Six Sigma Green Belt", "MS Org Change & PM", "Dallas, TX"];
+const credentials = ["PMP Certified", "TEDx Speaker", "Six Sigma Green Belt", "MS Org Change & PM", "Dallas, TX"];
 
 export function Hero() {
   return (
@@ -17,7 +17,7 @@ export function Hero() {
           Strategic<br />Partner, Not a<br />Thought Bubble.
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="text-lg text-brand-gray-600 max-w-lg leading-relaxed mb-10">
-          I build systems, companies, and experiences from scratch. PMP-certified project leader with a master&apos;s in organizational change — and 25+ shipped projects across tech, art, and home services.
+          I build systems, companies, and experiences from scratch. PMP-certified project leader, TEDx speaker, and master&apos;s in organizational change — with 25+ shipped projects across tech, art, and home services.
         </motion.p>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }} className="flex flex-wrap gap-4">
           {credentials.map((cred, i) => (

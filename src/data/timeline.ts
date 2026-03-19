@@ -18,9 +18,9 @@ export const timeline: TimelineEntry[] = [
   {
     organization: "Nasher Sculpture Center",
     role: "Producer, Nasher Prize",
-    subtitle: "Otobong Nkanga · Afro-Mingei · Featured in NYT",
+    subtitle: "Theaster Gates Afro-Mingei (2022-2023) · Otobong Nkanga (2025)",
     description:
-      "Turned a world-class museum into a restaurant, DJ venue, and community gathering space. Produced fireside chats, performance events, and the prize ceremony with full artistic direction. 5,000+ attendees. New York Times coverage.",
+      "Produced two Nasher Prize experiences. Theaster Gates' Afro-Mingei — a restaurant concept fusing Japanese and African American culture, DJ nights with curated vinyl, fireside chats. Then Otobong Nkanga's 2025 Prize. 5,000+ attendees. Press: Surface Magazine, KERA News, ARTnews, NYT.",
     stat: "5,000+ ATTENDEES · NYT COVERAGE",
   },
   {
@@ -40,9 +40,9 @@ export const timeline: TimelineEntry[] = [
   {
     organization: "Classic Chevrolet",
     role: "Social Media & Special Projects Liaison",
-    subtitle: "Digital Management · Brand Strategy",
+    subtitle: "The #1 Volume Chevrolet Dealer in the World",
     description:
-      "Built the first story-driven social media strategy for a major DFW dealership. Managed the mid-engine Corvette launch. Interfaced with celebrities and VIPs. Planned the Saturday Fair — reimagining a dealership as a community experience.",
+      "Built the first story-driven social media strategy for a major DFW dealership. 65,000 sq ft dealership, 22-time consecutive Dealer of the Year. C8 mid-engine Corvette reveal drew 4,500+ attendees. Interfaced with celebrities and VIPs. Planned the Saturday Fair — reimagining a dealership as a community experience.",
     stat: "~1M IMPRESSION GROWTH",
   },
   {
@@ -71,7 +71,7 @@ export const timeline: TimelineEntry[] = [
     role: "BA Marketing · Campus Builder",
     subtitle: "2 Orgs Founded · Student Government · 2 Jobs",
     description:
-      "Founded The Football Team (arts org, still active) and Speakeasy (underground collective). President, Business Constituency Council. Cool Speed Fellowship. All while working two jobs — Starbucks and Campus Recreation.",
+      "Co-founded The Football Team: A Creative Collective (still active). Created The Speakeasy Open Mic — a nomadic open mic series for poets, bands, and artists. President, Business Constituency Council. Cool Speed Fellowship. All while working two jobs — Starbucks and Campus Recreation. \"I've been told before that you can't create culture, and I vehemently disagree.\"",
     stat: "2 ORGS FOUNDED · 2 JOBS · STUDENT BODY PRESIDENT",
   },
 ];
