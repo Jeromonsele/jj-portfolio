@@ -46,7 +46,7 @@ export function ProjectCard({ project }: { project: Project }) {
     </>
   );
 
-  const className = "block border border-brand-gray-300 bg-warm-white overflow-hidden cursor-pointer hover:border-black transition-colors group";
+  const className = "block border border-brand-gray-300 bg-warm-white overflow-hidden cursor-pointer hover:border-black transition-all duration-200 active:scale-[0.98] group relative z-10";
 
   if (project.link) {
     return (

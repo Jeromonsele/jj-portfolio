@@ -9,7 +9,7 @@ export function StorySection() {
       <SectionLabel number="02" label="THE STORY" />
       <div className="max-w-[1200px] mx-auto px-10 pb-16">
         <ScrollReveal>
-          <h2 className="text-[clamp(32px,5vw,56px)] font-black uppercase tracking-tight leading-none mb-10">
+          <h2 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase tracking-tighter leading-[0.85] mb-10">
             From Campus<br />Builder to<br />Company Founder.
           </h2>
         </ScrollReveal>
