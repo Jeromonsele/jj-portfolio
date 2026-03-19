@@ -15,10 +15,10 @@ export default function Contact() {
           // Let&apos;s Talk
         </p>
         <h1 className="text-[clamp(36px,6vw,64px)] font-black uppercase leading-[0.95] tracking-tight mb-8">
-          I&apos;m always open<br />to interesting<br />conversations.
+          Say hi.
         </h1>
         <p className="text-lg text-brand-gray-600 max-w-lg leading-relaxed mb-12">
-          Whether it&apos;s a role, a project, or an idea — I&apos;d love to hear about it.
+          Got a role, a project, or an idea? I want to hear about it.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a

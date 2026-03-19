@@ -12,7 +12,7 @@ export function Hero() {
           transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.1 }}
           className="font-mono text-[13px] text-orange uppercase tracking-[3px] mb-6"
         >
-          // Builder · Strategist · Systems Thinker
+          // Builder · Operator · Founder
         </motion.p>
 
         <motion.h1
@@ -39,7 +39,7 @@ export function Hero() {
           transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.5 }}
           className="text-lg text-brand-gray-600 max-w-lg leading-relaxed"
         >
-          I build systems, companies, and experiences from scratch — 25+ shipped projects across tech, art, infrastructure, and home services.
+          I build systems and companies from scratch. 25+ shipped projects across tech, art, infrastructure, and home services.
         </motion.p>
       </div>
     </section>

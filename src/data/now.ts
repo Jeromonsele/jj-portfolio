@@ -12,7 +12,7 @@ export const nowRoles: NowRole[] = [
     company: "The Very Good Home Company",
     date: "2024 — Present",
     description:
-      "Built a DFW insulation platform from zero — 1.8M property records, instant estimator, automated lead pipeline. Reframing a commodity market through technology and brand.",
+      "Built a DFW insulation platform from zero. 1.8M property records, instant estimator, automated lead pipeline. Making a commodity market feel different through tech and brand.",
     link: "https://theverygoodhomecompany.com",
   },
   {
@@ -20,7 +20,7 @@ export const nowRoles: NowRole[] = [
     company: "The Very Good Consulting",
     date: "2024 — Present",
     description:
-      "Operations consulting for home services using the proprietary 4 Gaps Framework. Closing the psychological, cultural, systems, and technical gaps that trap founders.",
+      "Operations consulting for home services. I use my 4 Gaps Framework to find the psychological, cultural, systems, and technical gaps that keep founders stuck.",
     link: "https://theverygoodguys.com",
   },
 ];

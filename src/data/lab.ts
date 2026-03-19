@@ -11,7 +11,7 @@ export const labEntries: LabEntry[] = [
     number: "001",
     title: "TEDx Talk: Revolution for Dummies",
     description:
-      "A step-by-step guide on how to revolutionize your world, your dreams, and why being a revolutionary might be the best thing for you.",
+      "How to revolutionize your world, your dreams, and why being a revolutionary might be the best thing for you.",
     tag: "Talk · TEDxUTA · 2018",
     link: "https://www.ted.com/talks/jj_eromonsele_revolution_for_dummies",
   },
@@ -42,7 +42,7 @@ export const labEntries: LabEntry[] = [
     number: "005",
     title: "Profit Leak Calculator",
     description:
-      "Interactive diagnostic tool that quantifies operational waste for service businesses.",
+      "Tells service businesses exactly how much money they're losing to operational waste.",
     tag: "Interactive · Tool",
     link: "https://theverygoodguys.com/health-check",
   },
@@ -50,14 +50,14 @@ export const labEntries: LabEntry[] = [
     number: "006",
     title: "AI Phone Receptionist",
     description:
-      "FastAPI + Twilio + OpenAI voice bot. Automated phone reception with natural conversation.",
+      "FastAPI + Twilio + OpenAI voice bot. Picks up the phone and talks to people so you don't have to.",
     tag: "Experiment · AI",
   },
   {
     number: "007",
     title: "The Book",
     description:
-      "PM and systems design through the lens of non-linear thinking. How to build and build well.",
+      "PM and systems design for people who don't think in straight lines. In progress.",
     tag: "Writing · In Progress",
   },
   {

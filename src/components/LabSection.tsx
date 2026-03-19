@@ -13,7 +13,7 @@ export function LabSection() {
             The Lab.
           </h2>
           <p className="text-sm text-white/50 mb-10 max-w-md">
-            Experiments, interactive tools, and things I think are cool. This section is alive — it updates as I build.
+            Experiments, tools, and things I think are cool. Updates as I build.
           </p>
         </ScrollReveal>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
