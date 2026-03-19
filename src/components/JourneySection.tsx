@@ -5,12 +5,12 @@ import { SectionLabel } from "./SectionLabel";
 
 const milestones = [
   { month: "Jul 2025", label: "Day Zero", detail: "Applied agentic workflows to ship first production app with zero prior code. Wrong Door Club + LPM v1." },
-  { month: "Aug 2025", label: "First Iteration Cycle", detail: "Responsive polish, deployment workflows mastered. Shipping velocity established." },
-  { month: "Oct 2025", label: "Multi-Project Ops", detail: "3 apps deployed in one month. 75 Hard Tracker, CC Planning, AIPromptDoc. Parallel execution unlocked." },
-  { month: "Nov 2025", label: "AI + 3D + Payments", detail: "4 products shipped. Gemini AI, Three.js 3D, OpenAI + Stripe payments. Each one would be a sprint for a dev team." },
-  { month: "Dec 2025", label: "Product Thinking", detail: "Custom domains. Multi-page architecture. Periods (getperiods.app), Life After 50. Building products, not projects." },
-  { month: "Jan 2026", label: "Revenue", detail: "First paid client site live at www.chrisacpa.com. Zero to client revenue in 6 months." },
-  { month: "Feb 2026", label: "Data Infrastructure", detail: "SearchFundDB: 4,849 funds loaded. PressureX lead engine. Company X-Ray. Supabase, auth, data pipelines at scale." },
+  { month: "Aug 2025", label: "First Iteration Cycle", detail: "Responsive polish. Figured out deployment workflows. Started shipping fast." },
+  { month: "Oct 2025", label: "Multi-Project Ops", detail: "3 apps deployed in one month. 75 Hard Tracker, CC Planning, AIPromptDoc. Running projects in parallel now." },
+  { month: "Nov 2025", label: "AI + 3D + Payments", detail: "4 products shipped. Gemini AI, Three.js 3D, OpenAI + Stripe. Any one of these is a sprint for a dev team." },
+  { month: "Dec 2025", label: "Real Products", detail: "Custom domains. Multi-page apps. Periods (getperiods.app), Life After 50. These aren't demos anymore." },
+  { month: "Jan 2026", label: "Revenue", detail: "First paid client site live at www.chrisacpa.com. Went from zero code to client revenue in 6 months." },
+  { month: "Feb 2026", label: "Data Infrastructure", detail: "SearchFundDB: 4,849 funds loaded. PressureX lead engine. Company X-Ray. Real databases, real auth, real pipelines." },
   { month: "Mar 2026", label: "Platform Scale", detail: "TVGHC: 1.8M property records, 4 counties, automated lead pipeline, 5-star reviews. Nine months from first line of code." },
 ];
 
@@ -31,7 +31,7 @@ export function JourneySection() {
             What Happens When<br />an Operator Gets AI.
           </h2>
           <p className="text-brand-gray-600 max-w-xl mb-12 text-lg leading-relaxed">
-            I&apos;m a PMP, Six Sigma, MS-level systems thinker. In July 2025, I applied agentic AI workflows to software for the first time. Nine months later: a production platform with 1.8M records, 20+ deployed products, and a pace that would take a traditional engineering team two years with a six-figure budget. AI doesn&apos;t replace operators. It reveals who actually knows how to operate.
+            I have a PMP, Six Sigma, and a master&apos;s in organizational change. In July 2025, I wrote my first line of code using agentic AI. Nine months later I had a production platform with 1.8M records and 20+ deployed products. A traditional dev team would need two years and a six-figure budget. AI doesn&apos;t replace operators. It reveals who actually knows how to operate.
           </p>
         </ScrollReveal>
 

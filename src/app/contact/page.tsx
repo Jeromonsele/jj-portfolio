@@ -18,7 +18,7 @@ export default function Contact() {
           Let&apos;s talk.
         </h1>
         <p className="text-lg text-brand-gray-600 max-w-lg leading-relaxed mb-12">
-          I take on select projects, advisory work, and strategic conversations. If you&apos;re building something that matters, reach out.
+          I take on select projects and advisory work. If you&apos;re building something real, I want to hear about it.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a

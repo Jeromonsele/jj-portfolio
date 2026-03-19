@@ -125,7 +125,7 @@ export const projects: Project[] = [
     title: "PressureX — Lead Engine",
     tag: "Lead Gen · Next.js · Supabase · High-Converting UI",
     description:
-      "Lead generation engine for the insulation business. High-converting estimate UI. This powers TVGHC's customer acquisition.",
+      "Lead generation engine for the insulation business. The estimate UI that feeds TVGHC's pipeline.",
     previewType: "dark",
     previewText: "PressureX\nLead Engine",
     link: "https://pressure-x-6ehl.vercel.app",

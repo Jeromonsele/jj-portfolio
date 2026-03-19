@@ -12,7 +12,7 @@ export const nowRoles: NowRole[] = [
     company: "The Very Good Home Company",
     date: "2024 — Present",
     description:
-      "Built a DFW insulation platform from zero. 1.8M property records, instant estimator, automated lead pipeline. Making a commodity market feel different through tech and brand.",
+      "Built a DFW insulation platform from zero. 1.8M property records, instant estimator, automated lead pipeline. 5-star Google reviews. Nobody else in this market builds like this.",
     link: "https://theverygoodhomecompany.com",
   },
   {

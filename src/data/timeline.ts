@@ -61,7 +61,7 @@ export const timeline: TimelineEntry[] = [
     role: "Social Media & Special Projects Liaison",
     subtitle: "The #1 Volume Chevrolet Dealer in the World",
     description:
-      "Built the first story-driven social media strategy for a major DFW dealership. 65,000 sq ft, 22-time consecutive Dealer of the Year. The C8 mid-engine Corvette reveal drew 4,500+ attendees. Worked with celebrities and VIPs. Created the Saturday Fair, turning a dealership into a community space.",
+      "Built the first story-driven social media strategy for a 65,000 sq ft dealership, 22-time consecutive Dealer of the Year. Ran the C8 mid-engine Corvette reveal (4,500+ attendees). Worked with celebrities. Created the Saturday Fair. Turned a car lot into a place people actually wanted to be.",
     stat: "~1M IMPRESSION GROWTH",
     link: "https://www.classicchevrolet.com",
     media: [

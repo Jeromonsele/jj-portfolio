@@ -64,7 +64,7 @@ export const labEntries: LabEntry[] = [
     number: "008",
     title: "CC Planning",
     description:
-      "Content calendar planning tool. Error handling, initialization flows, memory leak prevention. One of the first real React apps.",
+      "Content calendar planning tool. My first real React app. Learned how to stop crashing browsers.",
     tag: "Tool · React · Early Build",
     link: "https://cc-planning.vercel.app",
   },
@@ -80,7 +80,7 @@ export const labEntries: LabEntry[] = [
     number: "010",
     title: "Vibe Receipt Generator",
     description:
-      "Fun v0-built receipt generator. Playing with AI-assisted code generation before going deep on agentic workflows.",
+      "Receipt generator built with v0. Messing around with AI-assisted code before I went all in on agentic workflows.",
     tag: "Experiment · v0 · AI-Assisted",
     link: "https://v0-vibe-receipt-generator.vercel.app",
   },
@@ -88,7 +88,7 @@ export const labEntries: LabEntry[] = [
     number: "011",
     title: "AIPromptDoc",
     description:
-      "Prompt engineering documentation tool. Python 3.12 backend. Where the interest in AI tooling began.",
+      "Prompt engineering documentation tool. Python 3.12. This is where I first got curious about AI tooling.",
     tag: "Tool · Python · Prompt Engineering",
     link: "https://aipromptdoc.vercel.app",
   },
