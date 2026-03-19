@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="max-w-[1200px] mx-auto px-10 pt-28 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[85vh]">
+    <section className="max-w-[1200px] mx-auto px-10 pt-28 pb-20 min-h-[85vh] flex items-center">
       <div>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -43,23 +42,6 @@ export function Hero() {
           I build systems, companies, and experiences from scratch — 25+ shipped projects across tech, art, infrastructure, and home services.
         </motion.p>
       </div>
-
-      <motion.div
-        initial={{ opacity: 0, scale: 0.92 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.3 }}
-        className="relative flex justify-center lg:justify-end"
-      >
-        <div className="relative w-full max-w-md aspect-square rounded-sm overflow-hidden">
-          <Image
-            src="/avatar.png"
-            alt="3D illustrated portrait of Jordan Eromonsele"
-            fill
-            priority
-            className="object-cover"
-          />
-        </div>
-      </motion.div>
     </section>
   );
 }
