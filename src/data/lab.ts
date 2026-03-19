@@ -29,6 +29,7 @@ export const labEntries: LabEntry[] = [
     description:
       "Next.js + OpenAI + Stripe. Anonymous AI-powered confessions with real-time responses.",
     tag: "Interactive · Live",
+    link: "https://ai-confession-booth.vercel.app",
   },
   {
     number: "004",
@@ -43,6 +44,7 @@ export const labEntries: LabEntry[] = [
     description:
       "Interactive diagnostic tool that quantifies operational waste for service businesses.",
     tag: "Interactive · Tool",
+    link: "https://theverygoodguys.com/health-check",
   },
   {
     number: "006",

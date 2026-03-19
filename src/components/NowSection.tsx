@@ -5,7 +5,7 @@ import { ScrollReveal } from "./ScrollReveal";
 
 export function NowSection() {
   return (
-    <section>
+    <section id="now">
       <SectionLabel number="01" label="NOW" />
       <div className="max-w-[1200px] mx-auto px-10 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

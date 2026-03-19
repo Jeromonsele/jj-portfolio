@@ -4,6 +4,7 @@ export interface TimelineEntry {
   subtitle: string;
   description: string;
   stat?: string;
+  link?: string;
 }
 
 export const timeline: TimelineEntry[] = [
@@ -22,6 +23,7 @@ export const timeline: TimelineEntry[] = [
     description:
       "Produced two Nasher Prize experiences. Theaster Gates' Afro-Mingei — a restaurant concept fusing Japanese and African American culture, DJ nights with curated vinyl, fireside chats. Then Otobong Nkanga's 2025 Prize. 5,000+ attendees. Press: Surface Magazine, KERA News, ARTnews, NYT.",
     stat: "5,000+ ATTENDEES · NYT COVERAGE",
+    link: "https://www.nashersculpturecenter.org/programs-events/programs-list/program/id/307",
   },
   {
     organization: "Bank of America",
@@ -44,6 +46,7 @@ export const timeline: TimelineEntry[] = [
     description:
       "Built the first story-driven social media strategy for a major DFW dealership. 65,000 sq ft dealership, 22-time consecutive Dealer of the Year. C8 mid-engine Corvette reveal drew 4,500+ attendees. Interfaced with celebrities and VIPs. Planned the Saturday Fair — reimagining a dealership as a community experience.",
     stat: "~1M IMPRESSION GROWTH",
+    link: "https://www.classicchevrolet.com",
   },
   {
     organization: "Independent Consulting",
@@ -73,5 +76,6 @@ export const timeline: TimelineEntry[] = [
     description:
       "TEDx speaker — \"Revolution for Dummies\" (2018). Co-founded The Football Team: A Creative Collective (still active). Created The Speakeasy Open Mic and Euphoria, an interactive art show cultivating Arlington's creative scene. President, Business Constituency Council. Cool Speed Fellowship. All while working two jobs. \"I've been told before that you can't create culture, and I vehemently disagree.\"",
     stat: "TEDX SPEAKER · 2 ORGS FOUNDED · EUPHORIA CREATOR",
+    link: "https://www.ted.com/talks/jj_eromonsele_revolution_for_dummies",
   },
 ];

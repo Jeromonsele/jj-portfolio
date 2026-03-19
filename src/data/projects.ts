@@ -50,6 +50,7 @@ export const projects: Project[] = [
     previewType: "gradient",
     previewText: "Afro-Mingei\nNasher Prize",
     previewStat: "5,000+ Attendees · NYT",
+    link: "https://www.nashersculpturecenter.org/programs-events/programs-list/program/id/307",
   },
   {
     slug: "classic-chevrolet",
@@ -60,6 +61,7 @@ export const projects: Project[] = [
     previewType: "dark",
     previewText: "Classic\nChevrolet",
     previewStat: "#1 Chevy Dealer · World",
+    link: "https://www.classicchevrolet.com",
   },
   {
     slug: "lpm-sop",
@@ -68,6 +70,7 @@ export const projects: Project[] = [
     description:
       "Full-production SOP management platform. 13-service Docker stack — Postgres, Redis, FastAPI, Celery, Nginx, Traefik, Prometheus, Grafana, ELK. The most architecturally complex build.",
     image: "/projects/lpm-hero.png",
+    link: "https://lpm-2.vercel.app",
   },
   {
     slug: "emma-project",
@@ -95,6 +98,7 @@ export const projects: Project[] = [
       "Anonymous AI-powered confessional with real-time responses, payment integration via Stripe, and exportable confessions via HTML2Canvas. Supabase auth.",
     previewType: "dark",
     previewText: "AI Confession\nBooth",
+    link: "https://ai-confession-booth.vercel.app",
   },
   {
     slug: "ac-christopher",
