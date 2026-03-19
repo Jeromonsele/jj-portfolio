@@ -16,6 +16,21 @@ export function TimelineItem({ entry }: { entry: TimelineEntry }) {
       <p className="text-sm text-brand-gray-600 mb-2">{entry.subtitle}</p>
       <p className="text-sm text-brand-gray-600 leading-relaxed max-w-xl">{entry.description}</p>
       {entry.stat && <StatBadge>{entry.stat}</StatBadge>}
+      {entry.media && entry.media.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-3">
+          {entry.media.map((m) => (
+            <a
+              key={m.url}
+              href={m.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[10px] text-orange border border-orange/30 px-2.5 py-1 uppercase tracking-wider hover:bg-orange hover:text-warm-white transition-all duration-200"
+            >
+              {m.label} ↗
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

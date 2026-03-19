@@ -84,9 +84,9 @@ export const projects: Project[] = [
   {
     slug: "haus-of-duas",
     title: "Haus of Duas",
-    tag: "App · React · Gemini AI · Islamic Prayer",
+    tag: "Design Studio · React · Art Curation · Brand Strategy",
     description:
-      "Islamic prayer app with Gemini AI for prayer guidance and Q&A. React 19, Vite, Tailwind.",
+      "Art curation and spatial design studio. Transforms corporate environments into curated narratives. Bespoke art, moodboard editions, white-glove installation. \"A space without a story is just a room.\"",
     image: "/projects/haus-of-duas.png",
     link: "https://haus-of-duas.vercel.app",
   },
