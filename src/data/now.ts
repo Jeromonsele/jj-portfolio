@@ -8,7 +8,7 @@ export interface NowRole {
 
 export const nowRoles: NowRole[] = [
   {
-    title: "Founder & CEO",
+    title: "Founder, Operations",
     company: "The Very Good Home Company",
     date: "2024 — Present",
     description:
