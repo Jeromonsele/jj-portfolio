@@ -12,13 +12,13 @@ export default function Contact() {
       <Nav />
       <main className="max-w-[1200px] mx-auto px-10 pt-32 pb-20 min-h-[70vh]">
         <p className="font-mono text-[11px] text-orange uppercase tracking-[2px] mb-5">
-          // Let&apos;s Talk
+          // Contact
         </p>
         <h1 className="text-[clamp(36px,6vw,64px)] font-black uppercase leading-[0.95] tracking-tight mb-8">
-          Say hi.
+          Let&apos;s talk.
         </h1>
         <p className="text-lg text-brand-gray-600 max-w-lg leading-relaxed mb-12">
-          Got a role, a project, or an idea? I want to hear about it.
+          I take on select projects, advisory work, and strategic conversations. If you&apos;re building something that matters, reach out.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a

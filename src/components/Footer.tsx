@@ -4,7 +4,7 @@ export function Footer() {
       <div>
         <h3 className="text-sm font-extrabold uppercase tracking-wider mb-2">Jordan Eromonsele</h3>
         <p className="text-[13px] text-brand-gray-600 max-w-xs leading-relaxed">
-          I build things that work. Dallas, TX.
+          Select engagements and advisory. Dallas, TX.
         </p>
         <p className="text-[11px] text-brand-gray-300 mt-6">
           © 2026 Jordan Eromonsele. All rights reserved.

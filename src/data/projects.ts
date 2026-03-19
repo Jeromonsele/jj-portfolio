@@ -8,6 +8,7 @@ export interface Project {
   previewText?: string;
   previewStat?: string;
   link?: string;
+  tier: "flagship" | "builder" | "lab";
 }
 
 export const projects: Project[] = [
@@ -20,6 +21,7 @@ export const projects: Project[] = [
     image: "/projects/tvghc-hero.png",
     previewStat: "1.8M Properties · 4 Counties",
     link: "https://theverygoodhomecompany.com",
+    tier: "flagship",
   },
   {
     slug: "tvgg",
@@ -29,6 +31,7 @@ export const projects: Project[] = [
       "Operations consulting with a diagnostic framework I built. The 4 Gaps (psychological, cultural, systems, technical) came out of my master's program and got tested on real businesses. Helps home services founders stop being the bottleneck.",
     image: "/projects/tvgg-hero.png",
     link: "https://theverygoodguys.com",
+    tier: "flagship",
   },
   {
     slug: "searchfunddb",
@@ -40,6 +43,7 @@ export const projects: Project[] = [
     previewText: "SearchFundDB\n4,849 Funds",
     previewStat: "4,849 Funds Loaded",
     link: "https://searchfunddb.vercel.app",
+    tier: "flagship",
   },
   {
     slug: "nasher-prize",
@@ -51,6 +55,7 @@ export const projects: Project[] = [
     previewText: "Afro-Mingei\nNasher Prize",
     previewStat: "5,000+ Attendees · NYT",
     link: "https://www.nashersculpturecenter.org/programs-events/programs-list/program/id/307",
+    tier: "flagship",
   },
   {
     slug: "classic-chevrolet",
@@ -62,6 +67,7 @@ export const projects: Project[] = [
     previewText: "Classic\nChevrolet",
     previewStat: "#1 Chevy Dealer · World",
     link: "https://www.classicchevrolet.com",
+    tier: "flagship",
   },
   {
     slug: "lpm-sop",
@@ -71,6 +77,7 @@ export const projects: Project[] = [
       "SOP management platform running 13 Docker services: Postgres, Redis, FastAPI, Celery, Nginx, Traefik, Prometheus, Grafana, ELK. The biggest thing I've built architecturally.",
     image: "/projects/lpm-hero.png",
     link: "https://lpm-2.vercel.app",
+    tier: "flagship",
   },
   {
     slug: "emma-project",
@@ -80,6 +87,7 @@ export const projects: Project[] = [
       "3D website built with Three.js and React Three Fiber. Interactive 3D elements, Framer Motion animations, Lenis smooth scrolling. Client project.",
     image: "/projects/emma-project-hero.png",
     link: "https://emmaproject.vercel.app",
+    tier: "builder",
   },
   {
     slug: "haus-of-duas",
@@ -89,6 +97,7 @@ export const projects: Project[] = [
       "Art curation and spatial design studio. Transforms corporate environments into curated narratives. Bespoke art, moodboard editions, white-glove installation. \"A space without a story is just a room.\"",
     image: "/projects/haus-of-duas.png",
     link: "https://haus-of-duas.vercel.app",
+    tier: "builder",
   },
   {
     slug: "ai-confession-booth",
@@ -99,6 +108,7 @@ export const projects: Project[] = [
     previewType: "dark",
     previewText: "AI Confession\nBooth",
     link: "https://ai-confession-booth.vercel.app",
+    tier: "builder",
   },
   {
     slug: "ac-christopher",
@@ -108,26 +118,7 @@ export const projects: Project[] = [
       "CPA firm website. Clean design, React 19, Framer Motion, fully responsive. Paid client work.",
     image: "/projects/ac-christopher-hero.png",
     link: "https://c-akhidenor-cpa.vercel.app",
-  },
-  {
-    slug: "periods",
-    title: "Periods.",
-    tag: "Product · Next.js · Cross-Platform · Custom Domain",
-    description:
-      "Period tracking app. Web + iOS, custom domain (getperiods.app). Built it because I needed it to exist.",
-    previewType: "dark",
-    previewText: "Periods.",
-    link: "https://getperiods.app",
-  },
-  {
-    slug: "life-after-50",
-    title: "Life After 50",
-    tag: "Web App · React · Smooth Scroll",
-    description:
-      "Multi-page web app with smooth scroll navigation. Built for people thinking about what comes after 50.",
-    previewType: "gradient",
-    previewText: "Life\nAfter 50",
-    link: "https://life-after50.vercel.app",
+    tier: "builder",
   },
   {
     slug: "pressurex",
@@ -138,6 +129,7 @@ export const projects: Project[] = [
     previewType: "dark",
     previewText: "PressureX\nLead Engine",
     link: "https://pressure-x-6ehl.vercel.app",
+    tier: "builder",
   },
   {
     slug: "company-xray",
@@ -148,6 +140,29 @@ export const projects: Project[] = [
     previewType: "terminal",
     previewText: "$ company-xray\n→ analyzing...\n✓ report ready",
     link: "https://company-xray.vercel.app",
+    tier: "builder",
+  },
+  {
+    slug: "periods",
+    title: "Periods.",
+    tag: "Product · Next.js · Cross-Platform · Custom Domain",
+    description:
+      "Period tracking app. Web + iOS, custom domain (getperiods.app). Built it because I needed it to exist.",
+    previewType: "dark",
+    previewText: "Periods.",
+    link: "https://getperiods.app",
+    tier: "lab",
+  },
+  {
+    slug: "life-after-50",
+    title: "Life After 50",
+    tag: "Web App · React · Smooth Scroll",
+    description:
+      "Multi-page web app with smooth scroll navigation. Built for people thinking about what comes after 50.",
+    previewType: "gradient",
+    previewText: "Life\nAfter 50",
+    link: "https://life-after50.vercel.app",
+    tier: "lab",
   },
   {
     slug: "wrong-door-club",
@@ -158,6 +173,7 @@ export const projects: Project[] = [
     previewType: "gradient",
     previewText: "Wrong\nDoor Club",
     link: "https://wrongdoorclub.vercel.app",
+    tier: "lab",
   },
   {
     slug: "aipromptdoc",
@@ -168,6 +184,7 @@ export const projects: Project[] = [
     previewType: "terminal",
     previewText: "$ aipromptdoc\n→ deploy ready\n✓ Python 3.12",
     link: "https://aipromptdoc.vercel.app",
+    tier: "lab",
   },
   {
     slug: "cc-planning",
@@ -178,6 +195,7 @@ export const projects: Project[] = [
     previewType: "light",
     previewText: "CC\nPlanning",
     link: "https://cc-planning.vercel.app",
+    tier: "lab",
   },
   {
     slug: "75-hard",
@@ -188,6 +206,7 @@ export const projects: Project[] = [
     previewType: "dark",
     previewText: "75 HARD\nDay 1",
     link: "https://75-hard-couples-tracker-5wcu.vercel.app",
+    tier: "lab",
   },
   {
     slug: "vibe-receipt",
@@ -198,5 +217,6 @@ export const projects: Project[] = [
     previewType: "dark",
     previewText: "Vibe\nReceipt",
     link: "https://v0-vibe-receipt-generator.vercel.app",
+    tier: "lab",
   },
 ];

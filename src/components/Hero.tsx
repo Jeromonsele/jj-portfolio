@@ -12,34 +12,34 @@ export function Hero() {
           transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.1 }}
           className="font-mono text-[13px] text-orange uppercase tracking-[3px] mb-6"
         >
-          // Builder · Operator · Founder
+          // PMP · Six Sigma · TEDx Speaker · AI Policy Author · MS Org Change
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 300, damping: 25, delay: 0.2 }}
-          className="text-[clamp(3.5rem,8vw,9rem)] font-black uppercase leading-[0.85] tracking-tighter mb-10"
+          className="text-[clamp(3rem,7vw,7rem)] font-black uppercase leading-[0.85] tracking-tighter mb-10"
         >
-          Strategic<br />Partner, Not<br />a Thought<br />Bubble.
+          The gap is never<br />the technology.<br />It&apos;s the operating<br />system around it.
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.4 }}
-          className="text-[15px] text-brand-gray-600 max-w-md leading-relaxed mb-8"
+          className="text-lg text-brand-gray-600 max-w-xl leading-relaxed mb-6"
         >
-          PMP · TEDx Speaker · Six Sigma · MS Org Change &amp; PM
+          I&apos;ve shipped 25+ systems across aerospace, banking, fine art, automotive, and home services. The failure pattern is identical every time. I fix it.
         </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.5 }}
-          className="text-lg text-brand-gray-600 max-w-lg leading-relaxed"
+          className="font-mono text-[12px] text-brand-gray-600 uppercase tracking-[2px]"
         >
-          I build systems and companies from scratch. 25+ shipped projects across tech, art, infrastructure, and home services.
+          Currently: building a 1.8M-property platform · writing about AI-augmented operations · advising on system design
         </motion.p>
       </div>
     </section>

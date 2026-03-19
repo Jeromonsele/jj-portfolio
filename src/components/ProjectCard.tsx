@@ -8,9 +8,11 @@ const previewStyles: Record<string, string> = {
   terminal: "bg-gradient-to-br from-[#1a1a2e] to-[#16213e] text-white font-mono text-[13px]",
 };
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project, compact }: { project: Project; compact?: boolean }) {
+  const previewHeight = compact ? "h-[140px]" : "h-[200px]";
+
   const preview = project.image ? (
-    <div className="h-[200px] relative overflow-hidden">
+    <div className={`${previewHeight} relative overflow-hidden`}>
       <Image
         src={project.image}
         alt={project.title}
@@ -24,7 +26,7 @@ export function ProjectCard({ project }: { project: Project }) {
       )}
     </div>
   ) : (
-    <div className={`h-[200px] flex items-end justify-start p-6 relative ${previewStyles[project.previewType || "dark"]}`}>
+    <div className={`${previewHeight} flex items-end justify-start p-6 relative ${previewStyles[project.previewType || "dark"]}`}>
       {project.previewStat && (
         <span className="absolute top-4 right-4 font-mono text-[10px] text-orange uppercase tracking-wider">{project.previewStat}</span>
       )}
@@ -37,8 +39,8 @@ export function ProjectCard({ project }: { project: Project }) {
       {preview}
       <div className="p-6">
         <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-2">{project.tag}</p>
-        <h3 className="text-lg font-extrabold uppercase tracking-tight mb-2">{project.title}</h3>
-        <p className="text-[13px] text-brand-gray-600 leading-relaxed">{project.description}</p>
+        <h3 className={`${compact ? "text-base" : "text-lg"} font-extrabold uppercase tracking-tight mb-2`}>{project.title}</h3>
+        <p className={`text-[13px] text-brand-gray-600 leading-relaxed ${compact ? "line-clamp-2" : ""}`}>{project.description}</p>
         <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider mt-3 group-hover:text-orange transition-colors">
           {project.link ? "Visit Site →" : "View Project →"}
         </span>

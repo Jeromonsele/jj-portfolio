@@ -1,5 +1,6 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
+import { CredibilityBar } from "@/components/CredibilityBar";
 import { NowSection } from "@/components/NowSection";
 import { StorySection } from "@/components/StorySection";
 import { JourneySection } from "@/components/JourneySection";
@@ -14,6 +15,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <CredibilityBar />
         <NowSection />
         <StorySection />
         <JourneySection />
