@@ -37,7 +37,7 @@ export default function RootLayout({
       className={`${inter.variable} ${jetbrains.variable}`}
     >
       <body className="bg-warm-white text-black font-sans antialiased relative selection:bg-orange selection:text-white">
-        <div className="fixed inset-0 z-50 pointer-events-none bg-noise opacity-[0.03] mix-blend-multiply" aria-hidden="true" />
+        <div className="fixed inset-0 z-50 pointer-events-none bg-paper opacity-[0.06] mix-blend-multiply" aria-hidden="true" />
         {children}
         <Analytics />
       </body>
