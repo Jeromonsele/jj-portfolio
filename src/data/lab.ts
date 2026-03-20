@@ -8,6 +8,13 @@ export interface LabEntry {
 
 export const labEntries: LabEntry[] = [
   {
+    number: "000",
+    title: "4 Gaps Diagnostic",
+    description: "8 questions. 2 minutes. Find out which organizational gap is holding you back. Based on real research, tested on real businesses.",
+    tag: "Interactive · Live · Framework",
+    link: "/diagnostic",
+  },
+  {
     number: "001",
     title: "TEDx Talk: Revolution for Dummies",
     description:

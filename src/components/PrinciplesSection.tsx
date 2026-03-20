@@ -73,6 +73,18 @@ export function PrinciplesSection() {
             </ScrollReveal>
           ))}
         </div>
+        <ScrollReveal>
+          <div className="mt-10 border border-orange/30 p-8 max-w-2xl">
+            <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-3">Interactive</p>
+            <h3 className="text-xl font-extrabold mb-3">Find Your Biggest Gap.</h3>
+            <p className="text-[14px] text-brand-gray-600 leading-relaxed mb-4">
+              8 questions. 2 minutes. The 4 Gaps diagnostic tells you which organizational gap is holding you back.
+            </p>
+            <a href="/diagnostic" className="inline-block bg-black text-warm-white px-6 py-2.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-orange transition-colors">
+              Take the Diagnostic →
+            </a>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

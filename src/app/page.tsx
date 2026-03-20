@@ -10,6 +10,7 @@ import { ThinkingSection } from "@/components/ThinkingSection";
 import { LabSection } from "@/components/LabSection";
 import { Footer } from "@/components/Footer";
 import { SmoothScroll } from "@/components/SmoothScroll";
+import { AskJJ } from "@/components/AskJJ";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <LabSection />
       </main>
       <Footer />
+      <AskJJ />
     </SmoothScroll>
   );
 }
