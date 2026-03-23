@@ -4,12 +4,10 @@ import { useState, useEffect } from "react";
 import { MobileMenu } from "./MobileMenu";
 
 const links = [
-  { label: "Story", href: "#story" },
-  { label: "Principles", href: "#principles" },
-  { label: "Journey", href: "#journey" },
-  { label: "Work", href: "#work" },
-  { label: "Thinking", href: "#thinking" },
-  { label: "Lab", href: "#lab" },
+  { label: "Case Studies", href: "#case-studies" },
+  { label: "Products", href: "/products" },
+  { label: "About", href: "/about" },
+  { label: "Writing", href: "/writing" },
 ];
 
 export function Nav() {
