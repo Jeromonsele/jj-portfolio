@@ -10,7 +10,7 @@ const questions = [
   { gap: "cultural", text: "When I introduce a new process or tool, my team resists the change." },
   { gap: "cultural", text: "My team's values and priorities often don't align with the company's direction." },
   { gap: "systems", text: "Key information lives in people's heads, not in documented processes." },
-  { gap: "systems", text: "Our tools and platforms don't connect well — we move data manually between systems." },
+  { gap: "systems", text: "Our tools and platforms don't connect well - we move data manually between systems." },
   { gap: "technical", text: "We're using tools or software that we've outgrown but haven't replaced." },
   { gap: "technical", text: "Our team lacks the technical skills needed for where we want to go next." },
 ];
@@ -27,12 +27,12 @@ interface Results {
 const gapDescriptions: Record<string, { title: string; description: string; color: string }> = {
   psychological: {
     title: "The Psychological Gap",
-    description: "You're the bottleneck. The organization depends on your presence, your decisions, your approval. Until you can step away without things breaking, you haven't built a system — you've built a dependency.",
+    description: "You're the bottleneck. The organization depends on your presence, your decisions, your approval. Until you can step away without things breaking, you haven't built a system - you've built a dependency.",
     color: "#C85A2A",
   },
   cultural: {
     title: "The Cultural Gap",
-    description: "Your team isn't aligned. New processes get resisted, communication breaks down, and people aren't rowing in the same direction. Culture isn't what you say — it's what happens when you're not in the room.",
+    description: "Your team isn't aligned. New processes get resisted, communication breaks down, and people aren't rowing in the same direction. Culture isn't what you say - it's what happens when you're not in the room.",
     color: "#8B6F47",
   },
   systems: {

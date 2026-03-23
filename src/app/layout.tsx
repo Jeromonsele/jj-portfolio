@@ -23,11 +23,11 @@ const jetbrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jordaneromonsele.com"),
-  title: "JJ Eromonsele — Product & Operations Leader",
+  title: "JJ Eromonsele - Product & Operations Leader",
   description:
     "Product and operations leader who uses data, economics, and systems design to ship products. Case studies, live products, and PM thinking.",
   openGraph: {
-    title: "JJ Eromonsele — Product & Operations Leader",
+    title: "JJ Eromonsele - Product & Operations Leader",
     description:
       "Product and operations leader. Case studies, live products, and PM thinking.",
     images: ["/avatar-og.png"],

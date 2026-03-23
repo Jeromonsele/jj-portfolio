@@ -21,17 +21,10 @@ export function Hero() {
           transition={{ type: "spring", stiffness: 300, damping: 25, delay: 0.2 }}
           className="font-heading text-[clamp(2.8rem,7vw,10rem)] font-black uppercase leading-[0.85] tracking-tighter mb-6 max-w-[1000px] text-obsidian"
         >
-          I use data, economics, and systems design to turn messy real-world problems into shipped products.
+          I build cool S%$@ with great people.
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.3 }}
-          className="text-lg text-brand-gray-600 max-w-xl leading-relaxed mb-8"
-        >
-          Six industries. Enterprise programs to startup builds. I&apos;ve managed 12+ concurrent programs at a $100M+ media technology company, produced $100K prize-winning cultural experiences, and built a 1.8M-property data platform from scratch.
-        </motion.p>
+
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

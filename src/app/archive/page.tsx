@@ -24,7 +24,7 @@ export default function Archive() {
         </h1>
         <p className="text-brand-gray-600 max-w-xl mb-12 text-lg leading-relaxed">
           Client work, experiments, and side projects. These show range and the
-          willingness to build — some polished, some learning exercises.
+          willingness to build - some polished, some learning exercises.
         </p>
 
         {/* Client & Builder */}

@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Products | JJ Eromonsele",
   description:
-    "Live shipped products — SearchFundDB, TVGHC Estimator, 4 Gaps Diagnostic",
+    "Live shipped products - SearchFundDB, TVGHC Estimator, 4 Gaps Diagnostic",
 };
 
 export default function Products() {

@@ -3,7 +3,7 @@ import { ScrollReveal } from "./ScrollReveal";
 
 const pieces = [
   {
-    title: "The Very Good Guys — Newsletter",
+    title: "The Very Good Guys - Newsletter",
     description: "Operations, AI, and building companies. Published on LinkedIn. I write about what I'm learning, what I'm getting wrong, and what I think is coming next.",
     tag: "Newsletter · LinkedIn",
     link: "https://linkedin.com/in/jordaneromonsele",

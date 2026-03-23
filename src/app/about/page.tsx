@@ -50,7 +50,7 @@ export default function About() {
       <Nav />
       <main className="max-w-[1200px] mx-auto px-10 pt-28 pb-20">
         <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px] mb-8">About</p>
-        {/* Section 1 — Bio */}
+        {/* Section 1 - Bio */}
         <div className="flex gap-6 items-start mb-16">
           <Image
             src="/avatar.png"
@@ -65,7 +65,7 @@ export default function About() {
               <p>
                 Product and operations leader based in Dallas, TX. I&apos;ve
                 spent six years across aerospace, banking, fine art, automotive,
-                field service software, and home services — and the system breaks
+                field service software, and home services - and the system breaks
                 in the same places every time.
               </p>
               <p>
@@ -83,7 +83,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Section 2 — Credentials */}
+        {/* Section 2 - Credentials */}
         <section className="border-t border-brand-gray-300 pt-8 mb-16">
           <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px]">
             Credentials
@@ -102,7 +102,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Section 3 — How I Operate */}
+        {/* Section 3 - How I Operate */}
         <section className="border-t border-brand-gray-300 pt-8 mb-16">
           <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px]">
             How I Operate
@@ -122,7 +122,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Section 4 — Career Path */}
+        {/* Section 4 - Career Path */}
         <section className="border-t border-brand-gray-300 pt-8">
           <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px]">
             Career Path
@@ -133,7 +133,7 @@ export default function About() {
                 key={c.company + c.years}
                 className="text-[13px] text-brand-gray-600 leading-relaxed"
               >
-                <strong className="text-obsidian">{c.company}</strong> — {c.role}{" "}
+                <strong className="text-obsidian">{c.company}</strong> - {c.role}{" "}
                 &middot; {c.years}
               </p>
             ))}

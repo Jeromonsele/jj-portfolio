@@ -29,7 +29,7 @@ export const projects: Project[] = [
   },
   {
     slug: "asg-ai-governance",
-    title: "ASG — AI Governance Framework",
+    title: "ASG - AI Governance Framework",
     tag: "Enterprise · AI Strategy · 6 Pillars · 80% Adoption",
     description:
       "Built a six-pillar AI governance framework for a managed services company. General use, creative workflows, business operations, client solutions, security/compliance, training. Three-phase maturity roadmap. 80% adoption in Phase 1.",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
   },
   {
     slug: "tvgg",
-    title: "The Very Good Consulting — 4 Gaps Framework",
+    title: "The Very Good Consulting - 4 Gaps Framework",
     tag: "Consulting · Framework · Proprietary IP",
     description:
       "Operations consulting with a diagnostic framework I built. The 4 Gaps (psychological, cultural, systems, technical) came out of my master's program and got tested on real businesses. Helps home services founders stop being the bottleneck.",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
   },
   {
     slug: "nasher-prize",
-    title: "Nasher Sculpture Center — Producer",
+    title: "Nasher Sculpture Center - Producer",
     tag: "Experience · Production · Art · NYT Coverage",
     description:
       "Produced two Nasher Prize experiences. Theaster Gates' Afro-Mingei (2022-2023), a restaurant/DJ/community concept fusing Japanese and African American culture. Then Otobong Nkanga's 2025 Prize. 5,000+ attendees. Covered by the New York Times, Surface Magazine, and ARTnews.",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
   },
   {
     slug: "classic-chevrolet",
-    title: "Classic Chevrolet — Digital Transformation",
+    title: "Classic Chevrolet - Digital Transformation",
     tag: "Social Media · Brand · #1 Dealer in the World",
     description:
       "Built the first story-driven social media strategy for the #1 volume Chevy dealer in the world. 65,000 sq ft, 22-time Dealer of the Year. Ran the C8 mid-engine Corvette reveal (4,500+ attendees). ~1M impression growth. Celebrity coordination. Created the Saturday Fair community events.",
@@ -157,7 +157,7 @@ export const projects: Project[] = [
   },
   {
     slug: "pressurex",
-    title: "PressureX — Lead Engine",
+    title: "PressureX - Lead Engine",
     tag: "Lead Gen · Next.js · Supabase · High-Converting UI",
     description:
       "Lead generation engine for the insulation business. The estimate UI that feeds TVGHC's pipeline.",

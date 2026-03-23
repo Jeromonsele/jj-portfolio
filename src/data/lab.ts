@@ -42,7 +42,7 @@ export const labEntries: LabEntry[] = [
     number: "004",
     title: "Agentic Coding Workflow",
     description:
-      "How I run 5 AI coding tools simultaneously — Claude Code, Cursor, Codex, Gemini, Qodo.",
+      "How I run 5 AI coding tools simultaneously - Claude Code, Cursor, Codex, Gemini, Qodo.",
     tag: "Article · Process",
   },
   {
@@ -79,7 +79,7 @@ export const labEntries: LabEntry[] = [
     number: "009",
     title: "75 Hard Couples Tracker",
     description:
-      "PWA fitness tracker for couples doing the 75 Hard challenge together. My first Vercel deployment — Oct 2025.",
+      "PWA fitness tracker for couples doing the 75 Hard challenge together. My first Vercel deployment - Oct 2025.",
     tag: "PWA · First Deploy · Oct 2025",
     link: "https://75-hard-couples-tracker-5wcu.vercel.app",
   },

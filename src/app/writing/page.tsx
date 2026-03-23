@@ -54,7 +54,7 @@ export default function Writing() {
               Newsletter &middot; LinkedIn
             </p>
             <h2 className="text-lg font-extrabold mb-2 group-hover:text-tvgg-rust transition-colors">
-              The Very Good Guys — Newsletter
+              The Very Good Guys - Newsletter
             </h2>
             <p className="text-[13px] text-brand-gray-600 leading-relaxed">
               Operations, AI, and building companies. What I&apos;m learning,

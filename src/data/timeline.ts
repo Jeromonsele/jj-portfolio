@@ -44,12 +44,12 @@ export const timeline: TimelineEntry[] = [
     stat: "5,000+ ATTENDEES · NYT COVERAGE",
     link: "https://www.nashersculpturecenter.org/programs-events/programs-list/program/id/307",
     media: [
-      { label: "NYT — Otobong Nkanga Wins Nasher Prize", url: "https://www.lissongallery.com/news/otobong-nkanga-wins-the-nasher-prize-for-sculpture-the-new-york-times" },
-      { label: "Surface Magazine — Afro-Mingei", url: "https://www.surfacemag.com/articles/theaster-gates-afro-mingei-nasher/" },
-      { label: "KERA News — Afro-Mingei Launch", url: "https://www.keranews.org/arts-culture/2022-11-04/theaster-gates-launching-food-pop-up-at-the-nasher-influenced-by-japan-the-african-american-south" },
-      { label: "KERA News — Public Reaction", url: "https://www.keranews.org/arts-culture/2022-11-21/deeply-personal-north-texans-react-to-theaster-gates-new-food-pop-up-at-the-nasher" },
-      { label: "ARTnews — Nkanga Wins Prize", url: "https://www.artnews.com/art-news/news/otobong-nkanga-wins-nasher-prize-1234681207/" },
-      { label: "Nasher — Afro-Mingei Program", url: "https://www.nashersculpturecenter.org/programs-events/programs-list/program/id/307" },
+      { label: "NYT - Otobong Nkanga Wins Nasher Prize", url: "https://www.lissongallery.com/news/otobong-nkanga-wins-the-nasher-prize-for-sculpture-the-new-york-times" },
+      { label: "Surface Magazine - Afro-Mingei", url: "https://www.surfacemag.com/articles/theaster-gates-afro-mingei-nasher/" },
+      { label: "KERA News - Afro-Mingei Launch", url: "https://www.keranews.org/arts-culture/2022-11-04/theaster-gates-launching-food-pop-up-at-the-nasher-influenced-by-japan-the-african-american-south" },
+      { label: "KERA News - Public Reaction", url: "https://www.keranews.org/arts-culture/2022-11-21/deeply-personal-north-texans-react-to-theaster-gates-new-food-pop-up-at-the-nasher" },
+      { label: "ARTnews - Nkanga Wins Prize", url: "https://www.artnews.com/art-news/news/otobong-nkanga-wins-nasher-prize-1234681207/" },
+      { label: "Nasher - Afro-Mingei Program", url: "https://www.nashersculpturecenter.org/programs-events/programs-list/program/id/307" },
     ],
   },
   {
@@ -82,9 +82,9 @@ export const timeline: TimelineEntry[] = [
     stat: "~1M IMPRESSION GROWTH",
     link: "https://www.classicchevrolet.com",
     media: [
-      { label: "Classic Chevrolet — #1 in the World (PR Newswire)", url: "https://www.prnewswire.com/news-releases/classic-chevrolet-in-grapevine-crowned-worlds-1-chevy-dealership-in-2023-302036195.html" },
-      { label: "CarPro — 22-Time Dealer of the Year", url: "https://www.carpro.com/blog/classic-chevrolet-named-1-volume-chevy-dealer-in-the-world-and-22-time-dealer-of-the-year" },
-      { label: "C8 Corvette Reveal — Forum Photos", url: "https://www.midenginecorvetteforum.com/forum/mid-engine-corvettes/mid-engine-exterior-interior-pictures-and-renderings/85886-classic-chevrolet-grapevine-texas-event-pics" },
+      { label: "Classic Chevrolet - #1 in the World (PR Newswire)", url: "https://www.prnewswire.com/news-releases/classic-chevrolet-in-grapevine-crowned-worlds-1-chevy-dealership-in-2023-302036195.html" },
+      { label: "CarPro - 22-Time Dealer of the Year", url: "https://www.carpro.com/blog/classic-chevrolet-named-1-volume-chevy-dealer-in-the-world-and-22-time-dealer-of-the-year" },
+      { label: "C8 Corvette Reveal - Forum Photos", url: "https://www.midenginecorvetteforum.com/forum/mid-engine-corvettes/mid-engine-exterior-interior-pictures-and-renderings/85886-classic-chevrolet-grapevine-texas-event-pics" },
     ],
   },
   {
@@ -120,11 +120,11 @@ export const timeline: TimelineEntry[] = [
     stat: "TEDX SPEAKER · 2 ORGS FOUNDED · EUPHORIA CREATOR",
     link: "https://www.ted.com/talks/jj_eromonsele_revolution_for_dummies",
     media: [
-      { label: "TEDx — Revolution for Dummies", url: "https://www.ted.com/talks/jj_eromonsele_revolution_for_dummies" },
-      { label: "The Shorthorn — TEDxUTA Coverage", url: "https://www.theshorthorn.com/news/tedxuta-features-open-education-career-development-talks/article_0dc67950-3e12-11e8-a74c-fb51986cf6b4.html" },
-      { label: "The Shorthorn — Six Creatives in Arlington Hip-Hop", url: "https://www.theshorthorn.com/life_and_entertainment/six-creatives-cultivating-the-arlington-hip-hop-scene/article_9695b708-4dc2-11e9-861c-b353b5fb010d.html" },
-      { label: "The Football Team — MavEngage", url: "https://mavorgs.campuslabs.com/engage/organization/football-team-creative-collective" },
-      { label: "Euphoria Show — Instagram", url: "https://www.instagram.com/euphoriashow.art/" },
+      { label: "TEDx - Revolution for Dummies", url: "https://www.ted.com/talks/jj_eromonsele_revolution_for_dummies" },
+      { label: "The Shorthorn - TEDxUTA Coverage", url: "https://www.theshorthorn.com/news/tedxuta-features-open-education-career-development-talks/article_0dc67950-3e12-11e8-a74c-fb51986cf6b4.html" },
+      { label: "The Shorthorn - Six Creatives in Arlington Hip-Hop", url: "https://www.theshorthorn.com/life_and_entertainment/six-creatives-cultivating-the-arlington-hip-hop-scene/article_9695b708-4dc2-11e9-861c-b353b5fb010d.html" },
+      { label: "The Football Team - MavEngage", url: "https://mavorgs.campuslabs.com/engage/organization/football-team-creative-collective" },
+      { label: "Euphoria Show - Instagram", url: "https://www.instagram.com/euphoriashow.art/" },
     ],
   },
 ];

@@ -4,7 +4,7 @@ import { PageTransition } from "@/components/PageTransition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — JJ Eromonsele",
+  title: "Contact - JJ Eromonsele",
 };
 
 export default function Contact() {

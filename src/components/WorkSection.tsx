@@ -24,7 +24,7 @@ export function WorkSection() {
           </h2>
         </ScrollReveal>
 
-        {/* Flagship — large cards */}
+        {/* Flagship - large cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {flagship.map((project, i) => (
             <ScrollReveal key={project.slug} delay={i * 0.06}>
@@ -33,7 +33,7 @@ export function WorkSection() {
           ))}
         </div>
 
-        {/* Builder Proof — smaller cards */}
+        {/* Builder Proof - smaller cards */}
         <ScrollReveal>
           <p className="font-mono text-[10px] font-semibold text-tvgg-rust uppercase tracking-widest mb-4">
             Builder Proof
