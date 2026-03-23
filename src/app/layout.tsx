@@ -16,12 +16,14 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jordan Eromonsele — Builder, Strategist, Systems Thinker",
+  metadataBase: new URL("https://jordaneromonsele.com"),
+  title: "Jordan Eromonsele — Product & Operations Leader",
   description:
-    "PMP-certified project leader and founder. 25+ shipped projects across tech, art, infrastructure, and home services.",
+    "Product and operations leader who uses data, economics, and systems design to ship products. Case studies, live products, and PM thinking.",
   openGraph: {
-    title: "Jordan Eromonsele",
-    description: "Strategic partner, not a thought bubble.",
+    title: "Jordan Eromonsele — Product & Operations Leader",
+    description:
+      "Product and operations leader. Case studies, live products, and PM thinking.",
     images: ["/avatar-og.png"],
   },
 };
@@ -37,6 +39,9 @@ export default function RootLayout({
       className={`${inter.variable} ${jetbrains.variable}`}
     >
       <body className="bg-warm-white text-black font-sans antialiased relative selection:bg-orange selection:text-white">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-black focus:text-white focus:px-4 focus:py-2 focus:text-sm">
+          Skip to content
+        </a>
         <div className="fixed inset-0 z-50 pointer-events-none bg-paper opacity-[0.06] mix-blend-multiply" aria-hidden="true" />
         {children}
         <Analytics />
