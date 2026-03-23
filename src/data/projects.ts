@@ -9,6 +9,8 @@ export interface Project {
   previewStat?: string;
   link?: string;
   tier: "flagship" | "builder" | "lab";
+  page: "case-study" | "products" | "archive";
+  category?: "client-builder" | "lab";
 }
 
 export const projects: Project[] = [
@@ -22,6 +24,8 @@ export const projects: Project[] = [
     previewStat: "1.8M Properties · 4 Counties",
     link: "https://theverygoodhomecompany.com",
     tier: "flagship",
+    page: "case-study",
+    category: "client-builder",
   },
   {
     slug: "asg-ai-governance",
@@ -33,6 +37,8 @@ export const projects: Project[] = [
     previewText: "AI Governance\n6 Pillars · 80%",
     previewStat: "80% Adoption",
     tier: "flagship",
+    page: "case-study",
+    category: "client-builder",
   },
   {
     slug: "tvgg",
@@ -43,6 +49,8 @@ export const projects: Project[] = [
     image: "/projects/tvgg-hero.png",
     link: "https://theverygoodguys.com",
     tier: "flagship",
+    page: "products",
+    category: "client-builder",
   },
   {
     slug: "searchfunddb",
@@ -55,6 +63,8 @@ export const projects: Project[] = [
     previewStat: "4,849 Funds Loaded",
     link: "https://searchfunddb.vercel.app",
     tier: "flagship",
+    page: "products",
+    category: "client-builder",
   },
   {
     slug: "nasher-prize",
@@ -67,6 +77,8 @@ export const projects: Project[] = [
     previewStat: "5,000+ Attendees · NYT",
     link: "https://www.nashersculpturecenter.org/programs-events/programs-list/program/id/307",
     tier: "flagship",
+    page: "case-study",
+    category: "client-builder",
   },
   {
     slug: "classic-chevrolet",
@@ -79,6 +91,8 @@ export const projects: Project[] = [
     previewStat: "#1 Chevy Dealer · World",
     link: "https://www.classicchevrolet.com",
     tier: "flagship",
+    page: "archive",
+    category: "client-builder",
   },
   {
     slug: "lpm-sop",
@@ -89,6 +103,8 @@ export const projects: Project[] = [
     image: "/projects/lpm-hero.png",
     link: "https://lpm-2.vercel.app",
     tier: "flagship",
+    page: "archive",
+    category: "client-builder",
   },
   {
     slug: "emma-project",
@@ -99,6 +115,8 @@ export const projects: Project[] = [
     image: "/projects/emma-project-hero.png",
     link: "https://emmaproject.vercel.app",
     tier: "builder",
+    page: "archive",
+    category: "client-builder",
   },
   {
     slug: "haus-of-duas",
@@ -109,6 +127,8 @@ export const projects: Project[] = [
     image: "/projects/haus-of-duas.png",
     link: "https://haus-of-duas.vercel.app",
     tier: "builder",
+    page: "archive",
+    category: "client-builder",
   },
   {
     slug: "ai-confession-booth",
@@ -120,6 +140,8 @@ export const projects: Project[] = [
     previewText: "AI Confession\nBooth",
     link: "https://ai-confession-booth.vercel.app",
     tier: "builder",
+    page: "products",
+    category: "client-builder",
   },
   {
     slug: "ac-christopher",
@@ -130,6 +152,8 @@ export const projects: Project[] = [
     image: "/projects/ac-christopher-hero.png",
     link: "https://c-akhidenor-cpa.vercel.app",
     tier: "builder",
+    page: "archive",
+    category: "client-builder",
   },
   {
     slug: "pressurex",
@@ -141,6 +165,8 @@ export const projects: Project[] = [
     previewText: "PressureX\nLead Engine",
     link: "https://pressure-x-6ehl.vercel.app",
     tier: "builder",
+    page: "archive",
+    category: "client-builder",
   },
   {
     slug: "company-xray",
@@ -152,6 +178,8 @@ export const projects: Project[] = [
     previewText: "$ company-xray\n→ analyzing...\n✓ report ready",
     link: "https://company-xray.vercel.app",
     tier: "builder",
+    page: "archive",
+    category: "client-builder",
   },
   {
     slug: "periods",
@@ -163,6 +191,8 @@ export const projects: Project[] = [
     previewText: "Periods.",
     link: "https://getperiods.app",
     tier: "lab",
+    page: "archive",
+    category: "lab",
   },
   {
     slug: "life-after-50",
@@ -174,6 +204,8 @@ export const projects: Project[] = [
     previewText: "Life\nAfter 50",
     link: "https://life-after50.vercel.app",
     tier: "lab",
+    page: "archive",
+    category: "lab",
   },
   {
     slug: "wrong-door-club",
@@ -185,6 +217,8 @@ export const projects: Project[] = [
     previewText: "Wrong\nDoor Club",
     link: "https://wrongdoorclub.vercel.app",
     tier: "lab",
+    page: "archive",
+    category: "lab",
   },
   {
     slug: "aipromptdoc",
@@ -196,6 +230,8 @@ export const projects: Project[] = [
     previewText: "$ aipromptdoc\n→ deploy ready\n✓ Python 3.12",
     link: "https://aipromptdoc.vercel.app",
     tier: "lab",
+    page: "archive",
+    category: "lab",
   },
   {
     slug: "cc-planning",
@@ -207,6 +243,8 @@ export const projects: Project[] = [
     previewText: "CC\nPlanning",
     link: "https://cc-planning.vercel.app",
     tier: "lab",
+    page: "archive",
+    category: "lab",
   },
   {
     slug: "75-hard",
@@ -218,6 +256,8 @@ export const projects: Project[] = [
     previewText: "75 HARD\nDay 1",
     link: "https://75-hard-couples-tracker-5wcu.vercel.app",
     tier: "lab",
+    page: "archive",
+    category: "lab",
   },
   {
     slug: "vibe-receipt",
@@ -229,5 +269,7 @@ export const projects: Project[] = [
     previewText: "Vibe\nReceipt",
     link: "https://v0-vibe-receipt-generator.vercel.app",
     tier: "lab",
+    page: "archive",
+    category: "lab",
   },
 ];
