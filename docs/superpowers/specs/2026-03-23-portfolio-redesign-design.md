@@ -108,12 +108,12 @@ shipped products.
 
 Replaces the current "As Featured In" credibility bar. Four metric cards in a horizontal row:
 
-| Metric | Label |
-|--------|-------|
-| **1.87M** | Properties Indexed |
-| **80%** | AI Gov. Adoption |
-| **$100K** | Prize Productions |
-| **12+** | Concurrent Programs |
+| Metric | Label | Links to |
+|--------|-------|----------|
+| **1.87M** | Properties Indexed | /case-studies/tvghc |
+| **80%** | AI Gov. Adoption | /case-studies/asg |
+| **$100K** | Prize Productions | /case-studies/nasher |
+| **5,000+** | Attendees | /case-studies/nasher |
 
 Each chip links to its corresponding case study.
 
@@ -403,15 +403,225 @@ Keep existing /contact page structure. Add:
 - Warm paper grain texture (brand identity)
 - Orange accent color (#C85A2A)
 - JetBrains Mono for technical labels
-- AskJJ chatbot (stays, maybe moved to /contact or kept floating)
-- /diagnostic page (already built, no changes)
+- AskJJ chatbot — stays as floating widget on all pages. System prompt updated to match PM framing.
+- /diagnostic page (already built, no changes). Linked from Products page and About page principles section.
 - All 21 projects (moved to /archive, not deleted)
 - Framer Motion for hero entrance only
 - Lenis smooth scroll
 
 ---
 
-## 16. Sources
+## 16. TypeScript Interfaces & Data Shapes
+
+### CaseStudy
+
+```typescript
+interface CaseStudySection {
+  number: string;        // "01", "02", etc.
+  label: string;         // "The Problem", "The Constraints", etc.
+  headline: string;      // Bold headline for the section
+  body: string;          // Markdown-rendered prose
+  visual?: {             // Optional visual element (e.g., six-pillar grid)
+    type: "grid" | "metrics";
+    items: { label: string; sublabel?: string; value?: string }[];
+  };
+}
+
+interface CaseStudyMetric {
+  value: string;         // "80%", "6", "12+", "50+"
+  label: string;         // "Phase 1 Adoption"
+}
+
+interface CaseStudy {
+  slug: string;          // "asg", "nasher", "tvghc"
+  title: string;
+  tags: string[];        // ["Enterprise", "AI Governance", "Program Management"]
+  summary: string;       // 1-2 sentence hook for the header
+  role: string;
+  company: string;
+  duration: string;
+  keyMetric: string;     // "80% Adoption"
+  sections: CaseStudySection[];  // 6 sections per case study
+  outcomeMetrics: CaseStudyMetric[];  // 2x2 grid
+  thumbnail: {
+    type: "metric" | "gradient" | "image";
+    value: string;       // "80%" or gradient colors or image path
+  };
+  // For homepage card
+  cardProblem: string;
+  cardDecision: string;
+  cardOutcome: string;
+}
+```
+
+### Product
+
+```typescript
+interface Product {
+  slug: string;
+  title: string;
+  tags: string;          // "Data Platform · Next.js · Supabase"
+  description: string;
+  metrics: string[];     // ["4,849 funds", "75+ contacts", "30+ countries"]
+  url: string;           // Live production URL
+  ctaLabel: string;      // "Visit Live Site →" or "Try It →"
+}
+```
+
+**Product URLs:**
+- SearchFundDB: `https://searchfunddb.vercel.app`
+- TVGHC Estimator: `https://theverygoodhomecompany.com/get-estimate`
+- 4 Gaps Diagnostic: `/diagnostic` (internal route)
+- AI Confession Booth: `https://ai-confession-booth.vercel.app`
+
+### ProofChip
+
+```typescript
+interface ProofChip {
+  value: string;         // "1.87M"
+  label: string;         // "Properties Indexed"
+  href: string;          // Link to case study
+}
+```
+
+**Proof chip → case study mapping:**
+| Chip | Links to |
+|------|----------|
+| 1.87M Properties Indexed | /case-studies/tvghc |
+| 80% AI Gov. Adoption | /case-studies/asg |
+| $100K Prize Productions | /case-studies/nasher |
+| 5,000+ Attendees | /case-studies/nasher |
+
+(Changed 4th chip from "12+ Concurrent Programs" to "5,000+ Attendees" so each case study gets at least one chip and there are no duplicates.)
+
+### Project data refactoring
+
+The existing `projects.ts` is kept but all items get a `page` field:
+
+```typescript
+type ProjectPage = "case-study" | "products" | "archive";
+
+interface Project {
+  // ... existing fields ...
+  page: ProjectPage;     // Where this project lives in the new site
+}
+```
+
+**Project → page mapping:**
+| Project | Page | Reason |
+|---------|------|--------|
+| TVGHC | case-study | Flagship case study |
+| ASG AI Governance | case-study | Flagship case study |
+| Nasher Prize | case-study | Flagship case study |
+| SearchFundDB | products | Live product |
+| AI Confession Booth | products | Live product |
+| TVGG / 4 Gaps | products | Via diagnostic link |
+| Classic Chevrolet | archive | Historical role, not PM case study |
+| LPM SOP Platform | archive | Builder proof |
+| Emma Project | archive | Client work |
+| Haus of Duas | archive | Client work |
+| AC Christopher | archive | Client work |
+| PressureX | archive | Builder proof (linked from TVGHC case study) |
+| Company X-Ray | archive | Builder proof |
+| Periods. | archive | Lab experiment |
+| Life After 50 | archive | Lab experiment |
+| Wrong Door Club | archive | Lab experiment |
+| AIPromptDoc | archive | Lab experiment |
+| CC Planning | archive | Lab experiment |
+| 75 Hard Tracker | archive | Lab experiment |
+| Vibe Receipt | archive | Lab experiment |
+
+The `lab.ts` data file is merged into `projects.ts`. Lab entries that are already products (SearchFundDB, 4 Gaps, AI Confession Booth) use the product card on /products. Lab entries that are content (TEDx, Agentic Coding Workflow, Profit Leak Calculator) are either on /writing or dropped.
+
+---
+
+## 17. Navigation Details
+
+**Desktop nav:** `Jordan Eromonsele | Case Studies · Products · About · Writing | [Let's Talk →]`
+
+- "Let's Talk →" routes to `/contact`
+- `/archive` is intentionally NOT in the nav. Discoverable via footer link and "View all projects →" link on homepage.
+- `/diagnostic` is linked from: Products page (4 Gaps card), About page (principles section), and the case study TVGHC page.
+- Footer includes: LinkedIn, GitHub, Email, Archive link.
+
+**Anchor redirects (next.config.ts):**
+Old homepage anchors → new destinations:
+| Old anchor | Redirect to |
+|------------|-------------|
+| `/#story` | `/about` |
+| `/#principles` | `/about` |
+| `/#journey` | `/about` |
+| `/#work` | `/archive` |
+| `/#thinking` | `/writing` |
+| `/#lab` | `/archive` |
+| `/#now` | `/about` |
+
+---
+
+## 18. About Page Career Timeline Format
+
+Each row: **Company Name** — Role · Year Range
+
+```
+The Very Good Home Company — Founder · 2025–Present
+The Very Good Guys — Co-Founder, Consulting · 2025–Present
+Advanced Systems Group — Program Manager · 2024–2025
+Artisan Genius — Product Program Manager · 2023–2024
+Bank of America — Technical Project Manager · 2023–2024
+Nasher Sculpture Center — Program Manager · 2022–2023, 2025
+Randstad Digital — Project Manager · 2022
+Classic Chevrolet — Project Manager · 2020–2022
+Airbus Helicopters — Project Coordinator · 2019–2020
+```
+
+Testimonials from the current `timeline.ts` are dropped. They can be added to a future "Testimonials" section if needed, but they are not PM-signal and add scroll length.
+
+Media links (Airbus video, Classic Chevrolet news) are dropped from the career timeline. The timeline is a scannable list, not an expanded section.
+
+---
+
+## 19. Resume Download
+
+Place a PDF resume at `/public/jordan-eromonsele-resume.pdf`. The "Download Resume" button on the hero links to this file with `download` attribute. Update the PDF whenever the resume changes.
+
+---
+
+## 20. Mobile Responsive Layout
+
+All layouts follow existing responsive patterns:
+- **Proof chips:** 2x2 grid on mobile (currently 4-across on desktop)
+- **Case study cards:** Single column on mobile, image below text
+- **Products grid:** Single column on mobile
+- **About credentials:** Wrap naturally
+- **Career timeline:** Single column (already works)
+- **Case study pages:** Single column, metrics grid becomes 2x1
+- **Archive grid:** 2-column on mobile (currently 3-column on desktop)
+
+---
+
+## 21. Metadata Updates
+
+**Default title:** `Jordan Eromonsele — Product & Operations Leader`
+**Default description:** `Product and operations leader who uses data, economics, and systems design to ship products. Case studies, live products, and PM thinking.`
+
+**Per-page meta:**
+| Page | Title suffix | Description |
+|------|-------------|-------------|
+| / | (default) | (default) |
+| /case-studies/asg | ASG — AI Governance | How I built a six-pillar AI governance framework and achieved 80% adoption |
+| /case-studies/nasher | Nasher Prize — Cultural Production | Producing world-class experiences for the most prestigious sculpture prize |
+| /case-studies/tvghc | TVGHC — 1.8M-Property Platform | Building a data platform from zero in the $13.5B insulation market |
+| /products | Products | Live shipped products — SearchFundDB, TVGHC Estimator, 4 Gaps Diagnostic |
+| /about | About | Bio, credentials, career path, and operating principles |
+| /writing | Writing | Talks and published writing |
+| /archive | Archive | Client work, experiments, and side projects |
+| /contact | Contact | Get in touch |
+
+**Dark mode:** Not in scope for v1. Explicitly deferred.
+
+---
+
+## 22. Sources
 
 Research that informed this design:
 
