@@ -39,7 +39,7 @@ export function Hero() {
             View Case Studies ↓
           </a>
           <a
-            href="/jordan-eromonsele-resume.pdf"
+            href="/Jordan_Eromonsele_Resume.pdf"
             download
             className="border border-obsidian/20 text-obsidian px-8 py-4 text-[11px] font-bold uppercase tracking-[2px] hover:border-obsidian hover:bg-obsidian hover:text-cream transition-all duration-300 active:scale-[0.98]"
           >
