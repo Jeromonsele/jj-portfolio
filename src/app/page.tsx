@@ -1,13 +1,10 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
-import { CredibilityBar } from "@/components/CredibilityBar";
-import { NowSection } from "@/components/NowSection";
-import { PrinciplesSection } from "@/components/PrinciplesSection";
-import { StorySection } from "@/components/StorySection";
-import { JourneySection } from "@/components/JourneySection";
-import { WorkSection } from "@/components/WorkSection";
-import { ThinkingSection } from "@/components/ThinkingSection";
-import { LabSection } from "@/components/LabSection";
+import { ProofChips } from "@/components/ProofChips";
+import { CaseStudyCards } from "@/components/CaseStudyCards";
+import { ProductStrip } from "@/components/ProductStrip";
+import { ShortBio } from "@/components/ShortBio";
+import { FooterCTA } from "@/components/FooterCTA";
 import { Footer } from "@/components/Footer";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { AskJJ } from "@/components/AskJJ";
@@ -16,16 +13,15 @@ export default function Home() {
   return (
     <SmoothScroll>
       <Nav />
-      <main>
+      <main id="main-content">
         <Hero />
-        <CredibilityBar />
-        <NowSection />
-        <PrinciplesSection />
-        <StorySection />
-        <JourneySection />
-        <WorkSection />
-        <ThinkingSection />
-        <LabSection />
+        <ProofChips />
+        <section id="case-studies">
+          <CaseStudyCards />
+        </section>
+        <ProductStrip />
+        <ShortBio />
+        <FooterCTA />
       </main>
       <Footer />
       <AskJJ />
