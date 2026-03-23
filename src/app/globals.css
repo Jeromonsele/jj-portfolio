@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-orange: #C05621;
-  --color-black: #000000;
-  --color-warm-white: #F2EFE9;
-  --color-tvgg-rust: #C05621;
-  --color-obsidian: #000000;
-  --color-cream: #F2EFE9;
-  --color-tvgg-dark: #0C0C0C;
-  --color-brand-gray-600: #6B6B6B;
-  --color-brand-gray-300: #D4D4D4;
-  --color-brand-gray-100: #EFEFEF;
+  --color-orange: #E60000;
+  --color-black: #E60000;
+  --color-warm-white: #FFFFFF;
+  --color-tvgg-rust: #E60000;
+  --color-obsidian: #E60000;
+  --color-cream: #FFFFFF;
+  --color-tvgg-dark: #B30000;
+  --color-brand-gray-600: #E60000; /* Force even secondary text to be bold red for brutalist consistency */
+  --color-brand-gray-300: #FFCCCC;
+  --color-brand-gray-100: #FFFFFF;
 
   --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-heading: var(--font-jakarta), var(--font-inter), system-ui, sans-serif;
