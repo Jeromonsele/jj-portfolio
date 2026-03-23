@@ -139,8 +139,8 @@ export const projects: Project[] = [
     previewType: "dark",
     previewText: "AI Confession\nBooth",
     link: "https://ai-confession-booth.vercel.app",
-    tier: "builder",
-    page: "products",
+    tier: "lab",
+    page: "archive",
     category: "client-builder",
   },
   {
@@ -190,8 +190,8 @@ export const projects: Project[] = [
     previewType: "dark",
     previewText: "Periods.",
     link: "https://getperiods.app",
-    tier: "lab",
-    page: "archive",
+    tier: "builder",
+    page: "products",
     category: "lab",
   },
   {

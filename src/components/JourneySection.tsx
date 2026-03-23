@@ -23,7 +23,7 @@ export function JourneySection() {
   const totalMilestones = milestones.length;
 
   return (
-    <section id="journey" className="bg-black text-warm-white">
+    <section id="journey" className="bg-obsidian text-cream">
       <SectionLabel number="04" label="THE BUILD JOURNEY" dark />
       <div className="max-w-[1200px] mx-auto px-10 pb-16">
         <ScrollReveal>
@@ -41,20 +41,20 @@ export function JourneySection() {
             const progress = ((i + 1) / totalMilestones) * 100;
             return (
               <ScrollReveal key={m.month} delay={i * 0.06}>
-                <div className="border border-white/10 p-6 relative overflow-hidden hover:border-orange/40 transition-colors duration-300 group">
+                <div className="border border-white/10 p-6 relative overflow-hidden hover:border-tvgg-rust/40 transition-colors duration-300 group">
                   {/* Big background number */}
                   <span
-                    className="absolute -right-2 -top-4 text-[5rem] font-black leading-none text-white/[0.04] pointer-events-none select-none group-hover:text-orange/[0.08] transition-colors duration-300"
+                    className="absolute -right-2 -top-4 text-[5rem] font-black leading-none text-white/[0.04] pointer-events-none select-none group-hover:text-tvgg-rust/[0.08] transition-colors duration-300"
                     aria-hidden="true"
                   >
                     {m.num}
                   </span>
 
                   {/* Orange progress bar at top */}
-                  <div className="absolute top-0 left-0 h-[3px] bg-orange transition-all duration-500" style={{ width: `${progress}%` }} />
+                  <div className="absolute top-0 left-0 h-[3px] bg-tvgg-rust transition-all duration-500" style={{ width: `${progress}%` }} />
 
                   <div className="relative z-10">
-                    <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-2">{m.month}</p>
+                    <p className="font-mono text-[10px] text-tvgg-rust uppercase tracking-[2px] mb-2">{m.month}</p>
                     <h4 className="text-lg font-extrabold uppercase tracking-tight mb-2">{m.label}</h4>
                     <p className="text-[13px] text-white/50 leading-relaxed">{m.detail}</p>
                   </div>
@@ -66,10 +66,10 @@ export function JourneySection() {
 
         {/* Tech Stack */}
         <ScrollReveal>
-          <p className="font-mono text-[11px] text-orange uppercase tracking-[2px] mb-4">Languages &amp; Tools Learned</p>
+          <p className="font-mono text-[11px] text-tvgg-rust uppercase tracking-[2px] mb-4">Languages &amp; Tools Learned</p>
           <div className="flex flex-wrap gap-2">
             {techLearned.map((tech) => (
-              <span key={tech} className="font-mono text-[11px] text-white/40 border border-white/10 px-3 py-1.5 uppercase tracking-wider hover:border-orange/30 hover:text-orange transition-colors duration-200">
+              <span key={tech} className="font-mono text-[11px] text-white/40 border border-white/10 px-3 py-1.5 uppercase tracking-wider hover:border-tvgg-rust/30 hover:text-tvgg-rust transition-colors duration-200">
                 {tech}
               </span>
             ))}

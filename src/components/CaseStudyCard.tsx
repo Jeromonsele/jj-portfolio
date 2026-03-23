@@ -4,43 +4,41 @@ export function CaseStudyCard({ caseStudy }: { caseStudy: CaseStudy }) {
   return (
     <a
       href={`/case-studies/${caseStudy.slug}`}
-      className="block border border-brand-gray-300 p-5 hover:border-black hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
+      className="block border border-obsidian/10 p-8 md:p-10 hover:border-obsidian transition-all duration-300 active:scale-[0.98] group bg-cream relative z-10"
     >
-      <div className="flex flex-col md:flex-row gap-5">
-        {/* Thumbnail */}
-        <div
-          className={`w-full md:w-[180px] h-[140px] md:h-[160px] shrink-0 flex items-center justify-center ${
-            caseStudy.thumbnail.type === "gradient"
-              ? "bg-gradient-to-br from-[#2a1a0a] to-[#4a2a1a]"
-              : "bg-[#0A0A0A]"
-          }`}
-        >
-          <span className="text-2xl font-black text-orange font-mono">
-            {caseStudy.thumbnail.value}
-          </span>
+      <div className="flex flex-col">
+        {/* Top Header: Tags + Metric Badge */}
+        <div className="flex flex-wrap gap-4 justify-between items-start mb-6 w-full">
+          <p className="font-mono text-[10px] text-tvgg-rust font-semibold uppercase tracking-widest mt-1">
+            {caseStudy.tags.join(" · ")}
+          </p>
+          <div className="bg-obsidian/[0.02] border border-obsidian/10 px-3 py-1.5 font-mono text-[10px] text-obsidian uppercase tracking-widest font-bold">
+            IMPACT: {caseStudy.thumbnail.value}
+          </div>
         </div>
 
         {/* Text content */}
-        <div className="flex-1">
-          <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px] mb-2">
-            {caseStudy.tags.join(" · ")}
-          </p>
-          <h3 className="text-xl font-extrabold mb-2">{caseStudy.title}</h3>
-          <p className="text-[13px] text-brand-gray-600 leading-relaxed mb-3">
-            <strong className="text-black">Problem:</strong>{" "}
-            {caseStudy.cardProblem}
-          </p>
-          <p className="text-[13px] text-brand-gray-600 leading-relaxed mb-3">
-            <strong className="text-black">Decision:</strong>{" "}
-            {caseStudy.cardDecision}
-          </p>
-          <p className="text-[13px] text-brand-gray-600 leading-relaxed mb-3">
-            <strong className="text-black">Outcome:</strong>{" "}
-            {caseStudy.cardOutcome}
-          </p>
-          <span className="inline-block bg-black text-warm-white px-4 py-1.5 text-[10px] uppercase tracking-[1.5px] font-semibold mt-4">
-            Read Case Study &rarr;
-          </span>
+        <div className="flex-1 w-full max-w-4xl">
+          <h3 className="text-2xl font-heading font-extrabold uppercase tracking-tighter mb-6 leading-tight">{caseStudy.title}</h3>
+          
+          <div className="space-y-4">
+            <p className="text-[14px] text-obsidian/90 leading-relaxed">
+              <strong className="font-mono text-[10px] uppercase tracking-widest text-obsidian mr-2">Problem:</strong>
+              {caseStudy.cardProblem}
+            </p>
+            <p className="text-[14px] text-obsidian/90 leading-relaxed">
+              <strong className="font-mono text-[10px] uppercase tracking-widest text-obsidian mr-2">Decision:</strong>
+              {caseStudy.cardDecision}
+            </p>
+            <p className="text-[14px] text-obsidian/90 leading-relaxed">
+              <strong className="font-mono text-[10px] uppercase tracking-widest text-obsidian mr-2">Outcome:</strong>
+              {caseStudy.cardOutcome}
+            </p>
+          </div>
+
+          <div className="mt-8 flex items-center gap-2 text-tvgg-rust font-bold text-[10px] uppercase tracking-widest group-hover:text-obsidian transition-colors w-fit">
+            Read Case Study <span className="text-lg leading-none transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </div>
         </div>
       </div>
     </a>

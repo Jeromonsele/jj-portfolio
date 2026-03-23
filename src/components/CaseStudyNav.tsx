@@ -17,7 +17,7 @@ export function CaseStudyNav({
             <span className="text-[10px] text-brand-gray-600 uppercase tracking-[1px]">
               &larr; Previous
             </span>
-            <div className="text-sm font-bold mt-1 group-hover:text-orange transition-colors">
+            <div className="text-sm font-bold mt-1 group-hover:text-tvgg-rust transition-colors">
               {prevTitle}
             </div>
           </a>
@@ -29,7 +29,7 @@ export function CaseStudyNav({
             <span className="text-[10px] text-brand-gray-600 uppercase tracking-[1px]">
               Next &rarr;
             </span>
-            <div className="text-sm font-bold mt-1 group-hover:text-orange transition-colors">
+            <div className="text-sm font-bold mt-1 group-hover:text-tvgg-rust transition-colors">
               {nextTitle}
             </div>
           </a>

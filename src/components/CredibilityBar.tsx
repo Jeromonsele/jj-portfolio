@@ -27,7 +27,7 @@ export function CredibilityBar() {
           <div className="flex items-center gap-8">
             {features.map((f) => (
               <div key={f.label} className="shrink-0 text-center">
-                <span className="text-[15px] font-extrabold uppercase tracking-tight text-black">
+                <span className="text-[15px] font-extrabold uppercase tracking-tight text-obsidian">
                   {f.label}
                 </span>
               </div>

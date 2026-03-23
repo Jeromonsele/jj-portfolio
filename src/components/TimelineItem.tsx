@@ -4,24 +4,24 @@ import { StatBadge } from "./StatBadge";
 export function TimelineItem({ entry }: { entry: TimelineEntry }) {
   return (
     <div className="mb-12 relative pl-10 border-l-2 border-brand-gray-300">
-      <div className="absolute -left-[7px] top-1.5 w-3 h-3 bg-orange rounded-full" />
+      <div className="absolute -left-[7px] top-1.5 w-3 h-3 bg-tvgg-rust rounded-none" />
       {entry.link ? (
-        <a href={entry.link} target="_blank" rel="noopener noreferrer" className="font-mono text-[11px] text-orange uppercase tracking-[2px] mb-2 hover:underline block">
+        <a href={entry.link} target="_blank" rel="noopener noreferrer" className="font-mono text-[11px] text-tvgg-rust uppercase tracking-[2px] mb-2 hover:underline block">
           {entry.organization} ↗
         </a>
       ) : (
-        <p className="font-mono text-[11px] text-orange uppercase tracking-[2px] mb-2">{entry.organization}</p>
+        <p className="font-mono text-[11px] text-tvgg-rust uppercase tracking-[2px] mb-2">{entry.organization}</p>
       )}
       <h4 className="text-lg font-extrabold uppercase tracking-tight mb-0.5">{entry.role}</h4>
       <p className="text-sm text-brand-gray-600 mb-2">{entry.subtitle}</p>
       <p className="text-sm text-brand-gray-600 leading-relaxed max-w-xl">{entry.description}</p>
       {entry.stat && <StatBadge>{entry.stat}</StatBadge>}
       {entry.testimonial && (
-        <div className="mt-4 border-l-2 border-orange/30 pl-4">
+        <div className="mt-4 border-l-2 border-tvgg-rust/30 pl-4">
           <p className="text-sm text-brand-gray-600 italic leading-relaxed">
             &ldquo;{entry.testimonial.quote}&rdquo;
           </p>
-          <p className="font-mono text-[10px] text-orange uppercase tracking-[1.5px] mt-2">
+          <p className="font-mono text-[10px] text-tvgg-rust uppercase tracking-[1.5px] mt-2">
             {entry.testimonial.name}, {entry.testimonial.title}
           </p>
         </div>
@@ -34,7 +34,7 @@ export function TimelineItem({ entry }: { entry: TimelineEntry }) {
               href={m.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-[10px] text-orange border border-orange/30 px-2.5 py-1 uppercase tracking-wider hover:bg-orange hover:text-warm-white transition-all duration-200"
+              className="font-mono text-[10px] text-tvgg-rust border border-tvgg-rust/30 px-2.5 py-1 uppercase tracking-wider hover:bg-tvgg-rust hover:text-cream transition-all duration-200"
             >
               {m.label} ↗
             </a>

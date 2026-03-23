@@ -84,7 +84,7 @@ export default function Diagnostic() {
     <>
       <Nav />
       <main className="max-w-[1200px] mx-auto px-10 pt-32 pb-20 min-h-[70vh]">
-        <p className="font-mono text-[11px] text-orange uppercase tracking-[2px] mb-5">
+        <p className="font-mono text-[11px] text-tvgg-rust uppercase tracking-[2px] mb-5">
           // 4 Gaps Diagnostic
         </p>
 
@@ -100,7 +100,7 @@ export default function Diagnostic() {
             {/* Progress bar */}
             <div className="w-full max-w-lg h-[3px] bg-brand-gray-300 mb-10">
               <div
-                className="h-full bg-orange transition-all duration-300"
+                className="h-full bg-tvgg-rust transition-all duration-300"
                 style={{ width: `${progress}%` }}
               />
             </div>
@@ -118,7 +118,7 @@ export default function Diagnostic() {
                   <button
                     key={i}
                     onClick={() => handleAnswer(i + 1)}
-                    className="flex-1 border border-brand-gray-300 py-3 px-2 text-[11px] text-center font-mono uppercase tracking-wider hover:border-orange hover:text-orange transition-colors active:scale-95 active:bg-orange active:text-warm-white"
+                    className="flex-1 border border-brand-gray-300 py-3 px-2 text-[11px] text-center font-mono uppercase tracking-wider hover:border-tvgg-rust hover:text-tvgg-rust transition-colors active:scale-95 active:bg-tvgg-rust active:text-cream"
                   >
                     {label}
                   </button>
@@ -140,7 +140,7 @@ export default function Diagnostic() {
                   <div key={gap}>
                     <div className="flex justify-between items-baseline mb-2">
                       <h3 className="text-lg font-extrabold">{info.title}</h3>
-                      <span className="font-mono text-[13px] text-orange">{score}%</span>
+                      <span className="font-mono text-[13px] text-tvgg-rust">{score}%</span>
                     </div>
                     <div className="w-full h-3 bg-brand-gray-100">
                       <div
@@ -156,7 +156,7 @@ export default function Diagnostic() {
             {/* Biggest gap callout */}
             {biggestGap && (
               <div className="border-l-[3px] pl-6 mb-12 max-w-2xl" style={{ borderColor: gapDescriptions[biggestGap].color }}>
-                <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-2">Your biggest gap</p>
+                <p className="font-mono text-[10px] text-tvgg-rust uppercase tracking-[2px] mb-2">Your biggest gap</p>
                 <h3 className="text-xl font-extrabold mb-3">{gapDescriptions[biggestGap].title}</h3>
                 <p className="text-[15px] text-brand-gray-600 leading-relaxed">
                   {gapDescriptions[biggestGap].description}
@@ -168,13 +168,13 @@ export default function Diagnostic() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="mailto:connect@theverygoodguys.com?subject=4 Gaps Diagnostic Results"
-                className="bg-black text-warm-white px-8 py-3.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-orange transition-colors text-center"
+                className="bg-obsidian text-cream px-8 py-3.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-tvgg-rust transition-colors text-center"
               >
                 Talk to JJ About Your Gaps →
               </a>
               <button
                 onClick={() => { setResults(null); setAnswers([]); setCurrentQ(0); }}
-                className="border border-black px-8 py-3.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-black hover:text-warm-white transition-colors text-center"
+                className="border border-obsidian px-8 py-3.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-obsidian hover:text-cream transition-colors text-center"
               >
                 Retake Diagnostic
               </button>

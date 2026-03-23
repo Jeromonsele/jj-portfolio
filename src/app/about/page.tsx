@@ -5,7 +5,7 @@ import { PageTransition } from "@/components/PageTransition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | Jordan Eromonsele",
+  title: "About | JJ Eromonsele",
   description: "Bio, credentials, career path, and operating principles",
 };
 
@@ -54,13 +54,13 @@ export default function About() {
         <div className="flex gap-6 items-start mb-16">
           <Image
             src="/avatar.png"
-            alt="Jordan Eromonsele"
+            alt="JJ Eromonsele"
             width={120}
             height={120}
-            className="rounded-full shrink-0 ring-2 ring-brand-gray-300 ring-offset-4 ring-offset-warm-white"
+            className="rounded-none shrink-0 ring-2 ring-brand-gray-300 ring-offset-4 ring-offset-warm-white"
           />
           <div>
-            <h1 className="text-2xl font-extrabold mb-3">Jordan Eromonsele</h1>
+            <h1 className="text-2xl font-extrabold mb-3">JJ Eromonsele</h1>
             <div className="text-[15px] text-brand-gray-600 leading-[1.8] max-w-xl space-y-4">
               <p>
                 Product and operations leader based in Dallas, TX. I&apos;ve
@@ -133,7 +133,7 @@ export default function About() {
                 key={c.company + c.years}
                 className="text-[13px] text-brand-gray-600 leading-relaxed"
               >
-                <strong className="text-black">{c.company}</strong> — {c.role}{" "}
+                <strong className="text-obsidian">{c.company}</strong> — {c.role}{" "}
                 &middot; {c.years}
               </p>
             ))}

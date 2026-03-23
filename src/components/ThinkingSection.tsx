@@ -48,14 +48,14 @@ export function ThinkingSection() {
           {pieces.map((p, i) => (
             <ScrollReveal key={i} delay={i * 0.06}>
               {p.link ? (
-                <a href={p.link} target="_blank" rel="noopener noreferrer" className="block border border-brand-gray-300 p-6 hover:border-black transition-colors group">
-                  <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-2">{p.tag}</p>
-                  <h3 className="text-lg font-extrabold mb-2 group-hover:text-orange transition-colors">{p.title}</h3>
+                <a href={p.link} target="_blank" rel="noopener noreferrer" className="block border border-brand-gray-300 p-6 hover:border-obsidian transition-colors group">
+                  <p className="font-mono text-[10px] text-tvgg-rust uppercase tracking-[2px] mb-2">{p.tag}</p>
+                  <h3 className="text-lg font-extrabold mb-2 group-hover:text-tvgg-rust transition-colors">{p.title}</h3>
                   <p className="text-[13px] text-brand-gray-600 leading-relaxed">{p.description}</p>
                 </a>
               ) : (
                 <div className="border border-brand-gray-300 p-6">
-                  <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-2">{p.tag}</p>
+                  <p className="font-mono text-[10px] text-tvgg-rust uppercase tracking-[2px] mb-2">{p.tag}</p>
                   <h3 className="text-lg font-extrabold mb-2">{p.title}</h3>
                   <p className="text-[13px] text-brand-gray-600 leading-relaxed">{p.description}</p>
                 </div>

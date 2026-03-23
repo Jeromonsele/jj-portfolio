@@ -9,7 +9,7 @@ export function LabSection() {
   const labProjects = projects.filter((p) => p.tier === "lab");
 
   return (
-    <section id="lab" className="bg-black text-warm-white">
+    <section id="lab" className="bg-obsidian text-cream">
       <SectionLabel number="07" label="THE LAB" dark />
       <div className="max-w-[1200px] mx-auto px-10 pb-16">
         <ScrollReveal>
@@ -30,7 +30,7 @@ export function LabSection() {
 
         {/* Side Projects */}
         <ScrollReveal>
-          <p className="font-mono text-[11px] text-orange uppercase tracking-[2px] mb-4">
+          <p className="font-mono text-[11px] text-tvgg-rust uppercase tracking-[2px] mb-4">
             Side Projects
           </p>
         </ScrollReveal>

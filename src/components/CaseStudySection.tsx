@@ -10,8 +10,8 @@ export function CaseStudySection({
   const isHighlighted = section.number === "03" || section.number === "02";
 
   return (
-    <section className={isHighlighted ? "border-l-[3px] border-orange pl-6" : ""}>
-      <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-3">
+    <section className={isHighlighted ? "border-l-[3px] border-tvgg-rust pl-6" : ""}>
+      <p className="font-mono text-[10px] text-tvgg-rust uppercase tracking-[2px] mb-3">
         {section.number} / {section.label}
       </p>
       <h2 className="text-xl font-extrabold mb-4">{section.headline}</h2>
@@ -31,7 +31,7 @@ export function CaseStudySection({
               className="border border-brand-gray-300 p-4 text-center"
             >
               {item.value && (
-                <div className="text-[10px] text-orange font-mono">
+                <div className="text-[10px] text-tvgg-rust font-mono">
                   {item.value}
                 </div>
               )}

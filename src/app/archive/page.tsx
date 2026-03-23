@@ -6,7 +6,7 @@ import { PageTransition } from "@/components/PageTransition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Archive | Jordan Eromonsele",
+  title: "Archive | JJ Eromonsele",
   description: "Client work, experiments, and side projects",
 };
 
@@ -29,7 +29,7 @@ export default function Archive() {
 
         {/* Client & Builder */}
         <section className="mb-12">
-          <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-4">
+          <p className="font-mono text-[10px] text-tvgg-rust uppercase tracking-[2px] mb-4">
             Client &amp; Builder
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -41,7 +41,7 @@ export default function Archive() {
 
         {/* Lab & Experiments */}
         <section>
-          <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-4">
+          <p className="font-mono text-[10px] text-tvgg-rust uppercase tracking-[2px] mb-4">
             Lab &amp; Experiments
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

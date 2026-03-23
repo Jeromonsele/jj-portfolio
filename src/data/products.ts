@@ -40,13 +40,13 @@ export const products: Product[] = [
     ctaLabel: "Try It →",
   },
   {
-    slug: "ai-confession-booth",
-    title: "AI Confession Booth",
-    tags: "Consumer · Next.js · OpenAI · Stripe",
+    slug: "periods",
+    title: "Periods.",
+    tags: "Product · Next.js · Cross-Platform",
     description:
-      "Anonymous AI confessional with real-time responses, Stripe payments, Supabase auth, and exportable confessions.",
-    metrics: ["OpenAI + Stripe", "Auth + Payments"],
-    url: "https://ai-confession-booth.vercel.app",
-    ctaLabel: "Visit Live Site →",
+      "Period tracking app. Web + iOS, custom domain (getperiods.app). Built it because I needed it to exist.",
+    metrics: ["Web + iOS", "Custom Domain", "Next.js"],
+    url: "https://getperiods.app",
+    ctaLabel: "Visit Live App →",
   },
 ];

@@ -6,7 +6,7 @@ import { PageTransition } from "@/components/PageTransition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Products | Jordan Eromonsele",
+  title: "Products | JJ Eromonsele",
   description:
     "Live shipped products — SearchFundDB, TVGHC Estimator, 4 Gaps Diagnostic",
 };

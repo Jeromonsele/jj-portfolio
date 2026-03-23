@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { MobileMenu } from "./MobileMenu";
 
 const links = [
@@ -12,15 +13,8 @@ const links = [
 ];
 
 export function Nav() {
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const isActive = (href: string) => {
     if (href === "#case-studies") return pathname === "/";
@@ -29,48 +23,42 @@ export function Nav() {
 
   return (
     <>
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-warm-white/95 backdrop-blur-sm border-b border-brand-gray-300/50"
-            : "bg-transparent"
-        }`}
-      >
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-obsidian/10 transition-all duration-300">
         <div className="max-w-[1200px] mx-auto px-10 flex items-center justify-between h-16">
-          <a href="/" className="font-extrabold text-sm uppercase tracking-wider">
-            Jordan Eromonsele
-          </a>
+          <Link href="/" className="font-heading text-lg font-black tracking-tighter text-obsidian uppercase">
+            JJ Eromonsele
+          </Link>
           <div className="hidden md:flex items-center gap-8">
             {links.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
-                className={`text-[13px] transition-colors ${
+                className={`text-[10px] font-bold uppercase tracking-widest transition-colors ${
                   isActive(link.href)
-                    ? "text-black font-semibold"
-                    : "text-brand-gray-600 hover:text-black"
+                    ? "text-tvgg-rust"
+                    : "text-obsidian/50 hover:text-obsidian"
                 }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="hidden md:block">
-            <a
+            <Link
               href="/contact"
-              className="bg-black text-warm-white px-6 py-2.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-black/85 transition-colors"
+              className="bg-obsidian text-cream border border-transparent px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-tvgg-rust hover:border-tvgg-rust transition-colors duration-0 active:scale-[0.98]"
             >
               Let&apos;s Talk →
-            </a>
+            </Link>
           </div>
           <button
             className="md:hidden flex flex-col gap-1.5 p-2"
             onClick={() => setMenuOpen(true)}
             aria-label="Open menu"
           >
-            <span className="block w-6 h-0.5 bg-black" />
-            <span className="block w-6 h-0.5 bg-black" />
-            <span className="block w-4 h-0.5 bg-black" />
+            <span className="block w-6 h-0.5 bg-obsidian" />
+            <span className="block w-6 h-0.5 bg-obsidian" />
+            <span className="block w-4 h-0.5 bg-obsidian" />
           </button>
         </div>
       </nav>

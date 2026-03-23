@@ -121,7 +121,7 @@ export function AskJJ() {
       {/* Floating button */}
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-6 right-6 z-40 bg-black text-warm-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-orange transition-colors duration-200 active:scale-95 cursor-pointer"
+        className="fixed bottom-6 right-6 z-40 bg-obsidian text-cream w-14 h-14 rounded-none flex items-center justify-center border border-obsidian/20 hover:bg-tvgg-rust transition-colors duration-0 active:scale-95 cursor-pointer"
         aria-label="Ask JJ"
       >
         {open ? (
@@ -150,11 +150,11 @@ export function AskJJ() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 20, scale: 0.95 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
-          className="fixed bottom-24 right-6 z-40 w-[380px] max-h-[500px] bg-warm-white border border-brand-gray-300 shadow-2xl flex flex-col overflow-hidden rounded-sm">
+          className="fixed bottom-24 right-6 z-40 w-[380px] max-h-[500px] bg-cream border border-obsidian/10 shadow-none flex flex-col overflow-hidden rounded-none">
           {/* Header */}
-          <div className="bg-black text-warm-white px-5 py-4">
-            <p className="font-mono text-[10px] uppercase tracking-[2px] text-orange mb-1">
-              // Ask JJ
+          <div className="bg-obsidian text-cream px-5 py-4 border-b border-obsidian/10">
+            <p className="font-mono text-[10px] font-semibold uppercase tracking-widest text-tvgg-rust mb-1">
+              {"// Ask JJ"}
             </p>
             <p className="text-sm">
               Ask me anything about my work, projects, or how I think.
@@ -168,19 +168,19 @@ export function AskJJ() {
                 <p className="mb-2">Try asking:</p>
                 <button
                   onClick={() => handleSuggestion("Tell me about the Nasher Prize")}
-                  className="block text-left text-orange hover:underline mb-1 text-[12px] cursor-pointer"
+                  className="block text-left font-bold text-tvgg-rust hover:text-obsidian transition-colors mb-2 text-[11px] uppercase tracking-wider cursor-pointer"
                 >
                   &quot;Tell me about the Nasher Prize&quot;
                 </button>
                 <button
                   onClick={() => handleSuggestion("What is the 4 Gaps Framework?")}
-                  className="block text-left text-orange hover:underline mb-1 text-[12px] cursor-pointer"
+                  className="block text-left font-bold text-tvgg-rust hover:text-obsidian transition-colors mb-2 text-[11px] uppercase tracking-wider cursor-pointer"
                 >
                   &quot;What is the 4 Gaps Framework?&quot;
                 </button>
                 <button
                   onClick={() => handleSuggestion("How did you learn to code?")}
-                  className="block text-left text-orange hover:underline text-[12px] cursor-pointer"
+                  className="block text-left font-bold text-tvgg-rust hover:text-obsidian transition-colors mb-2 text-[11px] uppercase tracking-wider cursor-pointer"
                 >
                   &quot;How did you learn to code?&quot;
                 </button>
@@ -192,8 +192,8 @@ export function AskJJ() {
                 key={m.id}
                 className={`text-[13px] leading-relaxed whitespace-pre-wrap ${
                   m.role === "user"
-                    ? "bg-black text-warm-white p-3 ml-8"
-                    : "bg-brand-gray-100 text-black p-3 mr-8"
+                    ? "bg-obsidian text-cream p-4 ml-8 rounded-none"
+                    : "bg-cream border border-obsidian/10 text-obsidian p-4 mr-8 rounded-none"
                 }`}
               >
                 {m.content || (isLoading && m.role === "assistant" ? "" : "")}
@@ -203,20 +203,20 @@ export function AskJJ() {
             {isLoading &&
               messages.length > 0 &&
               messages[messages.length - 1].content === "" && (
-                <div className="bg-brand-gray-100 p-3 mr-8 text-[13px] text-brand-gray-600">
+                <div className="bg-cream border border-obsidian/10 p-4 mr-8 font-mono text-[10px] text-brand-gray-600 uppercase tracking-widest">
                   Thinking...
                 </div>
               )}
 
             {error && (
-              <div className="bg-brand-gray-100 p-3 mr-8 text-[13px] text-brand-gray-600">
+              <div className="bg-cream border border-obsidian/10 p-4 mr-8 text-[13px] text-brand-gray-600">
                 {error}
                 {error.includes("Email") ? null : (
                   <span className="block mt-1 text-[11px]">
                     Or email{" "}
                     <a
                       href="mailto:connect@theverygoodguys.com"
-                      className="text-orange underline"
+                      className="text-tvgg-rust underline"
                     >
                       connect@theverygoodguys.com
                     </a>
@@ -238,12 +238,12 @@ export function AskJJ() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask me anything..."
-              className="flex-1 bg-transparent text-[13px] outline-none placeholder:text-brand-gray-300"
+              className="flex-1 bg-transparent text-[13px] outline-none placeholder:text-brand-gray-300 font-mono"
             />
             <button
               type="submit"
               disabled={isLoading || !input.trim()}
-              className="bg-black text-warm-white px-4 py-2 text-[11px] font-mono uppercase tracking-wider hover:bg-orange transition-colors disabled:opacity-30 cursor-pointer"
+              className="bg-obsidian text-cream px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-tvgg-rust transition-colors duration-0 disabled:opacity-30 cursor-pointer"
             >
               Send
             </button>

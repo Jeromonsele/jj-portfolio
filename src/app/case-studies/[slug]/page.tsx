@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!caseStudy) return {};
 
   return {
-    title: `${caseStudy.title} | Jordan Eromonsele`,
+    title: `${caseStudy.title} | JJ Eromonsele`,
     description: caseStudy.summary,
   };
 }
@@ -61,7 +61,7 @@ export default async function CaseStudyPage({
             description: caseStudy.summary,
             author: {
               "@type": "Person",
-              name: "Jordan Eromonsele",
+              name: "JJ Eromonsele",
               url: "https://jordaneromonsele.com",
             },
           }),
@@ -70,7 +70,7 @@ export default async function CaseStudyPage({
       <main className="max-w-[1200px] mx-auto px-10 pt-28 pb-20">
         <a
           href="/#case-studies"
-          className="font-mono text-[11px] text-brand-gray-600 uppercase tracking-[2px] hover:text-orange transition-colors mb-10 block"
+          className="font-mono text-[11px] text-brand-gray-600 uppercase tracking-[2px] hover:text-tvgg-rust transition-colors mb-10 block"
         >
           &larr; Back to Case Studies
         </a>

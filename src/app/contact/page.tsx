@@ -4,7 +4,7 @@ import { PageTransition } from "@/components/PageTransition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — Jordan Eromonsele",
+  title: "Contact — JJ Eromonsele",
 };
 
 export default function Contact() {
@@ -12,7 +12,7 @@ export default function Contact() {
     <PageTransition>
       <Nav />
       <main className="max-w-[1200px] mx-auto px-10 pt-32 pb-20 min-h-[70vh]">
-        <p className="font-mono text-[11px] text-orange uppercase tracking-[2px] mb-5">
+        <p className="font-mono text-[11px] text-tvgg-rust uppercase tracking-[2px] mb-5">
           // Contact
         </p>
         <h1 className="text-[clamp(36px,6vw,64px)] font-black uppercase leading-[0.95] tracking-tight mb-8">
@@ -24,7 +24,7 @@ export default function Contact() {
         <div className="flex flex-col sm:flex-row gap-4">
           <a
             href="mailto:connect@theverygoodguys.com"
-            className="bg-black text-warm-white px-8 py-3.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-black/85 transition-colors text-center"
+            className="bg-obsidian text-cream px-8 py-3.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-obsidian/85 transition-colors text-center"
           >
             Email Me →
           </a>
@@ -32,14 +32,14 @@ export default function Contact() {
             href="https://linkedin.com/in/jordaneromonsele"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-black px-8 py-3.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-black hover:text-warm-white transition-colors text-center"
+            className="border border-obsidian px-8 py-3.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-obsidian hover:text-cream transition-colors text-center"
           >
             LinkedIn →
           </a>
         </div>
         <p className="text-[13px] text-brand-gray-600 mt-8">
           Or download my{" "}
-          <a href="/jordan-eromonsele-resume.pdf" download className="text-orange hover:underline font-semibold">
+          <a href="/jordan-eromonsele-resume.pdf" download className="text-tvgg-rust hover:underline font-semibold">
             resume (PDF)
           </a>
         </p>

@@ -10,7 +10,7 @@ export function WorkSection() {
   return (
     <section id="work" className="relative">
       <div
-        className="absolute top-0 right-10 text-[clamp(15rem,30vw,25rem)] font-black leading-none text-black opacity-[0.03] pointer-events-none select-none"
+        className="absolute -top-10 right-10 text-[clamp(15rem,30vw,35rem)] font-heading font-black leading-none text-obsidian opacity-[0.03] pointer-events-none select-none"
         aria-hidden="true"
       >
         01
@@ -19,7 +19,7 @@ export function WorkSection() {
       <SectionLabel number="05" label="SELECTED WORK" />
       <div className="max-w-[1200px] mx-auto px-10 pb-16 relative z-10">
         <ScrollReveal>
-          <h2 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase tracking-tighter leading-[0.85] mb-12">
+          <h2 className="font-heading text-[clamp(4rem,8vw,8rem)] font-black uppercase tracking-tighter leading-[0.85] mb-12 text-obsidian">
             Things<br />I&apos;ve Built.
           </h2>
         </ScrollReveal>
@@ -35,7 +35,7 @@ export function WorkSection() {
 
         {/* Builder Proof — smaller cards */}
         <ScrollReveal>
-          <p className="font-mono text-[11px] text-orange uppercase tracking-[2px] mb-4">
+          <p className="font-mono text-[10px] font-semibold text-tvgg-rust uppercase tracking-widest mb-4">
             Builder Proof
           </p>
         </ScrollReveal>

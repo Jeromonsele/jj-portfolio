@@ -46,20 +46,20 @@ export function PrinciplesSection() {
               delay={i * 0.06}
               className={i === principles.length - 1 ? "md:col-span-2" : ""}
             >
-              <div className="border border-brand-gray-300 p-8 relative overflow-hidden group hover:border-black/30 transition-colors duration-300">
+              <div className="border border-brand-gray-300 p-8 relative overflow-hidden group hover:border-obsidian/30 transition-colors duration-300">
                 {/* Ghost number */}
                 <span
-                  className="absolute -right-2 -top-4 text-[6rem] font-black leading-none text-black/[0.04] pointer-events-none select-none group-hover:text-orange/[0.08] transition-colors duration-300"
+                  className="absolute -right-2 -top-4 text-[6rem] font-black leading-none text-obsidian/[0.04] pointer-events-none select-none group-hover:text-tvgg-rust/[0.08] transition-colors duration-300"
                   aria-hidden="true"
                 >
                   {p.num}
                 </span>
 
                 {/* Orange top bar */}
-                <div className="absolute top-0 left-0 w-12 h-[3px] bg-orange" />
+                <div className="absolute top-0 left-0 w-12 h-[3px] bg-tvgg-rust" />
 
                 <div className="relative z-10">
-                  <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-4">
+                  <p className="font-mono text-[10px] text-tvgg-rust uppercase tracking-[2px] mb-4">
                     Principle {p.num}
                   </p>
                   <h3 className="text-lg font-extrabold mb-3 leading-snug">
@@ -74,13 +74,13 @@ export function PrinciplesSection() {
           ))}
         </div>
         <ScrollReveal>
-          <div className="mt-10 border border-orange/30 p-8 max-w-2xl">
-            <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-3">Interactive</p>
+          <div className="mt-10 border border-tvgg-rust/30 p-8 max-w-2xl">
+            <p className="font-mono text-[10px] text-tvgg-rust uppercase tracking-[2px] mb-3">Interactive</p>
             <h3 className="text-xl font-extrabold mb-3">Find Your Biggest Gap.</h3>
             <p className="text-[14px] text-brand-gray-600 leading-relaxed mb-4">
               8 questions. 2 minutes. The 4 Gaps diagnostic tells you which organizational gap is holding you back.
             </p>
-            <a href="/diagnostic" className="inline-block bg-black text-warm-white px-6 py-2.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-orange transition-colors">
+            <a href="/diagnostic" className="inline-block bg-obsidian text-cream px-6 py-2.5 text-xs font-semibold uppercase tracking-[1.5px] hover:bg-tvgg-rust transition-colors">
               Take the Diagnostic →
             </a>
           </div>

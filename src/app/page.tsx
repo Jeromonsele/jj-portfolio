@@ -28,7 +28,6 @@ export default function Home() {
         <FooterCTA />
       </main>
       <Footer />
-      <AskJJ />
     </SmoothScroll>
   );
 }

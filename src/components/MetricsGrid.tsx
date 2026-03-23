@@ -10,7 +10,7 @@ export function MetricsGrid({ metrics }: { metrics: CaseStudyMetric[] }) {
         >
           <div
             className={`text-[28px] font-black tracking-tight ${
-              i === 0 ? "text-orange" : ""
+              i === 0 ? "text-tvgg-rust" : ""
             }`}
           >
             {metric.value}
