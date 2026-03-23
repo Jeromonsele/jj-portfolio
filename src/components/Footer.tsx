@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="border-t border-obsidian/10">
-      <div className="max-w-[1200px] mx-auto px-10 py-16 flex flex-col md:flex-row justify-between items-start gap-12">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-10 py-16 flex flex-col md:flex-row justify-between items-start gap-12">
         <div className="max-w-sm">
           <h3 className="font-heading text-lg font-black uppercase tracking-tighter mb-4 text-obsidian">JJ Eromonsele</h3>
           <p className="text-[13px] text-brand-gray-600 leading-relaxed">

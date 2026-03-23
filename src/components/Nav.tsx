@@ -24,7 +24,7 @@ export function Nav() {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-obsidian/10 transition-all duration-300">
-        <div className="max-w-[1200px] mx-auto px-10 flex items-center justify-between h-16">
+        <div className="max-w-[1200px] mx-auto px-6 md:px-10 flex items-center justify-between h-16">
           <Link href="/" className="font-heading text-lg font-black tracking-tighter text-obsidian uppercase">
             JJ Eromonsele
           </Link>

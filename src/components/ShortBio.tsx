@@ -24,7 +24,7 @@ const itemVariants: Variants = {
 
 export function ShortBio() {
   return (
-    <section className="max-w-[1200px] mx-auto px-10 py-24 relative">
+    <section className="max-w-[1200px] mx-auto px-6 md:px-10 py-24 relative">
       <div className="border border-obsidian/10 bg-cream p-10 lg:p-16 relative overflow-hidden group hover:border-obsidian transition-colors duration-500">
         <div className="relative z-10 max-w-3xl">
           <p className="font-heading text-4xl lg:text-5xl font-black uppercase tracking-tighter leading-none mb-6 text-obsidian">JJ Eromonsele</p>

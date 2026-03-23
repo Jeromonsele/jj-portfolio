@@ -9,16 +9,18 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <a
       href={product.url}
-      className="block border border-obsidian/10 bg-cream p-5 hover:border-obsidian transition-all duration-300 active:scale-[0.98] group"
+      className="block border border-obsidian/10 bg-cream p-4 md:p-5 hover:border-obsidian transition-all duration-300 active:scale-[0.98] group flex flex-col h-full justify-between"
       {...linkProps}
     >
-      <p className="font-mono text-[10px] text-tvgg-rust font-semibold uppercase tracking-widest mb-2">
-        {product.tags}
-      </p>
-      <h3 className="text-lg font-heading font-extrabold uppercase tracking-tighter mb-2">{product.title}</h3>
-      <p className="text-[12px] text-brand-gray-600 leading-relaxed mb-4">
-        {product.description}
-      </p>
+      <div>
+        <p className="font-mono text-[10px] text-tvgg-rust font-semibold uppercase tracking-widest mb-2">
+          {product.tags}
+        </p>
+        <h3 className="text-base md:text-lg font-heading font-extrabold uppercase tracking-tighter mb-2">{product.title}</h3>
+        <p className="text-[12px] text-brand-gray-600 leading-relaxed mb-4">
+          {product.description}
+        </p>
+      </div>
       <div className="border-t border-obsidian/10 pt-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px]">
         {product.metrics.map((m, i) => (
           <span key={m}>

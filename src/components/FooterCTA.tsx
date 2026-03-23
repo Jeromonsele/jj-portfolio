@@ -3,7 +3,7 @@ export function FooterCTA() {
     <section className="bg-obsidian text-cream relative overflow-hidden">
       {/* Cinematic Vignette layered grain */}
       <div className="absolute inset-0 z-0 bg-paper opacity-10 mix-blend-overlay pointer-events-none" aria-hidden="true" />
-      <div className="max-w-[1200px] mx-auto px-10 py-32 text-center relative z-10">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-10 py-32 text-center relative z-10">
         <h2 className="font-heading text-[clamp(3rem,6vw,7rem)] font-black uppercase tracking-tighter leading-[0.85] mb-6">
           Let&apos;s work together.
         </h2>
