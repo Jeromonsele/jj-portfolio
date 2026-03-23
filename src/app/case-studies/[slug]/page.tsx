@@ -50,6 +50,22 @@ export default async function CaseStudyPage({
   return (
     <>
       <Nav />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: caseStudy.title,
+            description: caseStudy.summary,
+            author: {
+              "@type": "Person",
+              name: "Jordan Eromonsele",
+              url: "https://jordaneromonsele.com",
+            },
+          }),
+        }}
+      />
       <main className="max-w-[1200px] mx-auto px-10 pt-28 pb-20">
         <a
           href="/#case-studies"
