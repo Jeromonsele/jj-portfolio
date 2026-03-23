@@ -21,7 +21,7 @@ export function Hero() {
           transition={{ type: "spring", stiffness: 300, damping: 25, delay: 0.2 }}
           className="font-heading text-[clamp(2.8rem,7vw,10rem)] font-black uppercase leading-[0.85] tracking-tighter mb-6 max-w-[1000px] text-obsidian"
         >
-          I build cool S%$@ with great people.
+          I build systems that scale.
         </motion.h1>
 
 
