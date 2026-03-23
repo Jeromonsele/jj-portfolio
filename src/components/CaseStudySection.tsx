@@ -7,12 +7,14 @@ export function CaseStudySection({
 }) {
   const paragraphs = section.body.split("\n\n");
 
+  const isHighlighted = section.number === "03" || section.number === "02";
+
   return (
-    <section>
+    <section className={isHighlighted ? "border-l-[3px] border-orange pl-6" : ""}>
       <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-3">
         {section.number} / {section.label}
       </p>
-      <h2 className="text-lg font-extrabold mb-4">{section.headline}</h2>
+      <h2 className="text-xl font-extrabold mb-4">{section.headline}</h2>
       <div className="text-[14px] text-brand-gray-600 leading-[1.8] max-w-[640px]">
         {paragraphs.map((paragraph, i) => (
           <p key={i} className="mb-4">

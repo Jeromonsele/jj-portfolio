@@ -49,6 +49,7 @@ export default function About() {
     <PageTransition>
       <Nav />
       <main className="max-w-[1200px] mx-auto px-10 pt-28 pb-20">
+        <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px] mb-8">About</p>
         {/* Section 1 — Bio */}
         <div className="flex gap-6 items-start mb-16">
           <Image

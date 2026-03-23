@@ -16,10 +16,10 @@ export function ProductCard({ product }: { product: Product }) {
         {product.tags}
       </p>
       <h3 className="text-lg font-extrabold mb-2">{product.title}</h3>
-      <p className="text-[12px] text-brand-gray-600 leading-relaxed mb-3">
+      <p className="text-[12px] text-brand-gray-600 leading-relaxed mb-4">
         {product.description}
       </p>
-      <div className="flex flex-wrap gap-x-3 gap-y-1 text-[11px]">
+      <div className="border-t border-brand-gray-300/50 pt-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px]">
         {product.metrics.map((m, i) => (
           <span key={m}>
             <span className="font-bold">{m}</span>

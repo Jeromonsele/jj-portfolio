@@ -38,9 +38,9 @@ export function CaseStudyCard({ caseStudy }: { caseStudy: CaseStudy }) {
             <strong className="text-black">Outcome:</strong>{" "}
             {caseStudy.cardOutcome}
           </p>
-          <p className="text-[11px] text-orange uppercase tracking-[1.5px] font-semibold mt-3">
+          <span className="inline-block bg-black text-warm-white px-4 py-1.5 text-[10px] uppercase tracking-[1.5px] font-semibold mt-4">
             Read Case Study &rarr;
-          </p>
+          </span>
         </div>
       </div>
     </a>
