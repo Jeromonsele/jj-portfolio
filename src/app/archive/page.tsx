@@ -2,6 +2,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
+import { PageTransition } from "@/components/PageTransition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export default function Archive() {
   const lab = archived.filter((p) => p.category === "lab");
 
   return (
-    <>
+    <PageTransition>
       <Nav />
       <main className="max-w-[1200px] mx-auto px-10 pt-28 pb-20">
         <h1 className="text-[clamp(2rem,5vw,4rem)] font-black uppercase tracking-tighter leading-[0.9] mb-4">
@@ -51,6 +52,6 @@ export default function Archive() {
         </section>
       </main>
       <Footer />
-    </>
+    </PageTransition>
   );
 }

@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { CaseStudySection } from "@/components/CaseStudySection";
 import { MetricsGrid } from "@/components/MetricsGrid";
 import { CaseStudyNav } from "@/components/CaseStudyNav";
+import { PageTransition } from "@/components/PageTransition";
 
 export function generateStaticParams() {
   return [{ slug: "asg" }, { slug: "nasher" }, { slug: "tvghc" }];
@@ -48,7 +49,7 @@ export default async function CaseStudyPage({
   ];
 
   return (
-    <>
+    <PageTransition>
       <Nav />
       <script
         type="application/ld+json"
@@ -69,12 +70,12 @@ export default async function CaseStudyPage({
       <main className="max-w-[1200px] mx-auto px-10 pt-28 pb-20">
         <a
           href="/#case-studies"
-          className="font-mono text-[11px] text-orange uppercase tracking-[2px] hover:text-black transition-colors mb-10 block"
+          className="font-mono text-[11px] text-brand-gray-600 uppercase tracking-[2px] hover:text-orange transition-colors mb-10 block"
         >
           &larr; Back to Case Studies
         </a>
 
-        <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-4">
+        <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px] mb-4">
           {caseStudy.tags.join(" · ")}
         </p>
 
@@ -118,6 +119,6 @@ export default async function CaseStudyPage({
         />
       </main>
       <Footer />
-    </>
+    </PageTransition>
   );
 }

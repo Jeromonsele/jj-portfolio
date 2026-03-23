@@ -2,6 +2,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
 import { products } from "@/data/products";
+import { PageTransition } from "@/components/PageTransition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,10 +13,10 @@ export const metadata: Metadata = {
 
 export default function Products() {
   return (
-    <>
+    <PageTransition>
       <Nav />
       <main className="max-w-[1200px] mx-auto px-10 pt-28 pb-20">
-        <p className="font-mono text-[10px] text-orange uppercase tracking-[2px]">
+        <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px]">
           Shipped &amp; Live
         </p>
         <h1 className="text-[clamp(2rem,5vw,4rem)] font-black uppercase tracking-tighter leading-[0.9] mb-4">
@@ -32,6 +33,6 @@ export default function Products() {
         </div>
       </main>
       <Footer />
-    </>
+    </PageTransition>
   );
 }

@@ -1,5 +1,6 @@
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <>
+    <PageTransition>
       <Nav />
       <main className="max-w-[1200px] mx-auto px-10 pt-32 pb-20 min-h-[70vh]">
         <p className="font-mono text-[11px] text-orange uppercase tracking-[2px] mb-5">
@@ -44,6 +45,6 @@ export default function Contact() {
         </p>
       </main>
       <Footer />
-    </>
+    </PageTransition>
   );
 }

@@ -16,11 +16,15 @@ export default function Home() {
       <main id="main-content">
         <Hero />
         <ProofChips />
-        <section id="case-studies">
-          <CaseStudyCards />
-        </section>
+        <div className="bg-[#F3F1EE] py-4">
+          <section id="case-studies">
+            <CaseStudyCards />
+          </section>
+        </div>
         <ProductStrip />
-        <ShortBio />
+        <div className="border-t border-brand-gray-300/50">
+          <ShortBio />
+        </div>
         <FooterCTA />
       </main>
       <Footer />

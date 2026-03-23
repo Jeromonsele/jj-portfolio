@@ -9,9 +9,9 @@ export function ProofChips() {
             <a
               key={chip.label}
               href={chip.href}
-              className="border border-brand-gray-300 p-4 text-center hover:border-black transition-colors"
+              className="relative p-5 text-left hover:shadow-sm transition-all duration-200 before:absolute before:left-0 before:top-0 before:h-full before:w-[3px] before:bg-orange before:scale-y-0 hover:before:scale-y-100 before:transition-transform before:origin-top"
             >
-              <p className="text-2xl font-black tracking-tight">
+              <p className="text-4xl font-black tracking-tight">
                 {chip.value}
               </p>
               <p className="text-[10px] text-brand-gray-600 uppercase tracking-[1.5px] mt-1">

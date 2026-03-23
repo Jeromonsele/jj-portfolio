@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="max-w-[1200px] mx-auto px-10 pt-28 pb-20 min-h-[85vh] flex items-center">
+    <section className="max-w-[1200px] mx-auto px-10 pt-28 pb-8 min-h-[85vh] flex items-center">
       <div>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -19,9 +19,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", stiffness: 300, damping: 25, delay: 0.2 }}
-          className="text-[clamp(2.5rem,5.5vw,5rem)] font-black uppercase leading-[0.9] tracking-tighter mb-6"
+          className="text-[clamp(3rem,6vw,6rem)] font-black uppercase leading-[0.9] tracking-tighter mb-6 max-w-[800px]"
         >
-          I use data, economics,<br />and systems design to turn<br />messy real-world problems<br />into shipped products.
+          I use data, economics, and systems design to turn messy real-world problems into shipped products.
         </motion.h1>
 
         <motion.p

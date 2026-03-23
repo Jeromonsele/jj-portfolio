@@ -1,5 +1,6 @@
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Writing() {
   return (
-    <>
+    <PageTransition>
       <Nav />
       <main className="max-w-[1200px] mx-auto px-10 pt-28 pb-20">
         <h1 className="text-[clamp(2rem,5vw,4rem)] font-black uppercase tracking-tighter leading-[0.9] mb-4">
@@ -44,7 +45,7 @@ export default function Writing() {
 
           {/* Newsletter */}
           <a
-            href="https://linkedin.com/in/jordaneromonsele"
+            href="https://www.linkedin.com/newsletters/the-very-good-guys-7328408592338837507/"
             target="_blank"
             rel="noopener noreferrer"
             className="block border border-brand-gray-300 p-6 hover:border-black transition-colors group"
@@ -66,6 +67,6 @@ export default function Writing() {
         </div>
       </main>
       <Footer />
-    </>
+    </PageTransition>
   );
 }

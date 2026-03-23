@@ -9,10 +9,10 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <a
       href={product.url}
-      className="block border border-brand-gray-300 p-5 hover:border-black transition-colors"
+      className="block border border-brand-gray-300 p-5 hover:border-black hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
       {...linkProps}
     >
-      <p className="font-mono text-[10px] text-orange uppercase tracking-[2px] mb-2">
+      <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px] mb-2">
         {product.tags}
       </p>
       <h3 className="text-lg font-extrabold mb-2">{product.title}</h3>

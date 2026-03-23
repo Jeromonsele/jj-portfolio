@@ -14,9 +14,9 @@ export function ShortBio() {
         <Image
           src="/avatar.png"
           alt="Jordan Eromonsele"
-          width={80}
-          height={80}
-          className="rounded-full shrink-0"
+          width={120}
+          height={120}
+          className="rounded-full shrink-0 ring-2 ring-brand-gray-300 ring-offset-4 ring-offset-warm-white"
         />
         <div>
           <p className="text-base font-extrabold mb-2">Jordan Eromonsele</p>

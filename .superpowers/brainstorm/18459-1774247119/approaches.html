@@ -1,0 +1,99 @@
+<h2>3 Approaches for the Portfolio Redesign</h2>
+<p class="subtitle">Each takes the same raw material but structures it differently. Click the one that feels right.</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>The PM Portfolio (Pure Edit)</h3>
+      <p><strong>Keep the current single-page site. Ruthlessly re-edit it for PM signal.</strong></p>
+      <br>
+      <p><strong>What changes:</strong></p>
+      <ul style="margin:8px 0;padding-left:20px;font-size:14px;color:#666">
+        <li>Hero rewritten: outcomes + positioning line</li>
+        <li>3 proof chips replace credibility bar (1.87M properties, 80% AI adoption, $100K Nasher Prize)</li>
+        <li>Nav becomes: About / Case Studies / Products / Writing / Contact</li>
+        <li>3 flagship case studies replace 21 equal-weight projects</li>
+        <li>Case study cards with Problem → Decision → Outcome format</li>
+        <li>Everything else demoted to "Archive" or removed</li>
+        <li>"Coming soon" articles hidden until real</li>
+        <li>Story/Principles/Journey condensed into a short "About" section</li>
+      </ul>
+      <br>
+      <div class="pros-cons" style="display:flex;gap:16px">
+        <div style="flex:1"><strong style="color:#2a7d2a">Pros</strong>
+          <ul style="font-size:13px;padding-left:16px;color:#666"><li>Fastest to ship (1-2 days)</li><li>Existing aesthetic preserved</li><li>Single page = recruiter scans in 30 seconds</li></ul>
+        </div>
+        <div style="flex:1"><strong style="color:#c85a2a">Cons</strong>
+          <ul style="font-size:13px;padding-left:16px;color:#666"><li>Case studies live on the homepage as cards, not full pages</li><li>Limited depth — no room for the full decision narrative</li><li>Doesn't match the "world-class" visual standard</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>The Case Study Portfolio (Full Redesign)</h3>
+      <p><strong>New homepage + 3 dedicated case study pages. The site becomes a PM portfolio, not a personal site.</strong></p>
+      <br>
+      <p><strong>What changes:</strong></p>
+      <ul style="margin:8px 0;padding-left:20px;font-size:14px;color:#666">
+        <li>New hero: positioning line + 3 proof metrics + headshot</li>
+        <li>Nav: About / Case Studies / Products / Writing / Contact</li>
+        <li>Homepage shows 3 case study cards (image + problem + outcome + "Read Case Study →")</li>
+        <li>Each case study gets a full page: Problem → Insight → Options → Decision → Metrics → Reflection</li>
+        <li>Dedicated /about page with condensed story, principles, credentials</li>
+        <li>Products section: live links to SearchFundDB, TVGHC, Diagnostic</li>
+        <li>Writing section: only published pieces (TEDx, newsletter)</li>
+        <li>Archive page for builder proof and lab experiments</li>
+      </ul>
+      <br>
+      <div class="pros-cons" style="display:flex;gap:16px">
+        <div style="flex:1"><strong style="color:#2a7d2a">Pros</strong>
+          <ul style="font-size:13px;padding-left:16px;color:#666"><li>Full depth on each case study — shows your thinking</li><li>Matches what PM hiring managers expect in 2026</li><li>Room for metrics, decisions, trade-offs, reflections</li><li>Can share individual case study URLs with recruiters</li></ul>
+        </div>
+        <div style="flex:1"><strong style="color:#c85a2a">Cons</strong>
+          <ul style="font-size:13px;padding-left:16px;color:#666"><li>More work (3-4 days)</li><li>Requires writing 3 full case study narratives</li><li>Need to extract decision details from your memory</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>The Hybrid (Recommended)</h3>
+      <p><strong>New homepage designed for PM signal + 3 case study pages + keep the best of the current site.</strong></p>
+      <br>
+      <p><strong>What changes:</strong></p>
+      <ul style="margin:8px 0;padding-left:20px;font-size:14px;color:#666">
+        <li>New hero: "Product & operations leader..." + 3 proof chips + CTA</li>
+        <li>Nav: Case Studies / Products / About / Writing / Contact</li>
+        <li>Homepage: Hero → Proof chips → 3 Case Study cards → Live Products strip → Short bio → CTA</li>
+        <li>3 full case study pages (ASG, Nasher, TVGHC)</li>
+        <li>/about page: condensed story + principles (best of current site) + credentials</li>
+        <li>/products page: SearchFundDB, TVGHC estimator, 4 Gaps Diagnostic, AskJJ — live products that prove you build</li>
+        <li>/writing page: TEDx + newsletter + published articles only</li>
+        <li>/archive page: builder proof + lab (preserved, just not front-and-center)</li>
+        <li>Visual polish: higher contrast, tighter typography, reduced motion, better spacing</li>
+        <li>SEO: metadata, OG images, sitemap, JSON-LD</li>
+        <li>Accessibility: semantic HTML, focus states, contrast, reduced-motion</li>
+      </ul>
+      <br>
+      <div class="pros-cons" style="display:flex;gap:16px">
+        <div style="flex:1"><strong style="color:#2a7d2a">Pros</strong>
+          <ul style="font-size:13px;padding-left:16px;color:#666"><li>PM-optimized but keeps operator identity</li><li>Full case study depth + shareable URLs</li><li>Products page is rare differentiator — most PMs can't show live shipped products</li><li>Nothing good gets deleted, just reorganized</li><li>Meets the visual + SEO + accessibility bar</li></ul>
+        </div>
+        <div style="flex:1"><strong style="color:#c85a2a">Cons</strong>
+          <ul style="font-size:13px;padding-left:16px;color:#666"><li>Most work (4-6 days)</li><li>Still requires writing 3 case study narratives</li><li>More pages to maintain</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:32px;padding:20px;border:1px solid #333;border-radius:8px;background:#1a1a1a">
+  <p style="font-size:13px;color:#C85A2A;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px;font-family:monospace">My Recommendation</p>
+  <p style="font-size:15px;color:#ccc;line-height:1.6"><strong style="color:white">Option C (Hybrid)</strong> — because the Products page is your secret weapon. Most PM candidates show case studies about products they managed at other companies. You can show <em>live, working products you built yourself</em>. That's a moat. The case study pages prove you think like a PM. The products page proves you ship like a founder. Together, that's the "product-minded operator" signal you want.</p>
+</div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { MobileMenu } from "./MobileMenu";
 
 const links = [
@@ -13,12 +14,18 @@ const links = [
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const isActive = (href: string) => {
+    if (href === "#case-studies") return pathname === "/";
+    return pathname.startsWith(href);
+  };
 
   return (
     <>
@@ -38,7 +45,11 @@ export function Nav() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[13px] text-brand-gray-600 hover:text-black transition-colors"
+                className={`text-[13px] transition-colors ${
+                  isActive(link.href)
+                    ? "text-black font-semibold"
+                    : "text-brand-gray-600 hover:text-black"
+                }`}
               >
                 {link.label}
               </a>

@@ -1,6 +1,7 @@
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import Image from "next/image";
+import { PageTransition } from "@/components/PageTransition";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -45,7 +46,7 @@ const career = [
 
 export default function About() {
   return (
-    <>
+    <PageTransition>
       <Nav />
       <main className="max-w-[1200px] mx-auto px-10 pt-28 pb-20">
         {/* Section 1 — Bio */}
@@ -53,9 +54,9 @@ export default function About() {
           <Image
             src="/avatar.png"
             alt="Jordan Eromonsele"
-            width={100}
-            height={100}
-            className="rounded-full shrink-0"
+            width={120}
+            height={120}
+            className="rounded-full shrink-0 ring-2 ring-brand-gray-300 ring-offset-4 ring-offset-warm-white"
           />
           <div>
             <h1 className="text-2xl font-extrabold mb-3">Jordan Eromonsele</h1>
@@ -83,7 +84,7 @@ export default function About() {
 
         {/* Section 2 — Credentials */}
         <section className="border-t border-brand-gray-300 pt-8 mb-16">
-          <p className="font-mono text-[10px] text-orange uppercase tracking-[2px]">
+          <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px]">
             Credentials
           </p>
           <div className="flex flex-wrap gap-8 mt-4">
@@ -102,7 +103,7 @@ export default function About() {
 
         {/* Section 3 — How I Operate */}
         <section className="border-t border-brand-gray-300 pt-8 mb-16">
-          <p className="font-mono text-[10px] text-orange uppercase tracking-[2px]">
+          <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px]">
             How I Operate
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
@@ -122,7 +123,7 @@ export default function About() {
 
         {/* Section 4 — Career Path */}
         <section className="border-t border-brand-gray-300 pt-8">
-          <p className="font-mono text-[10px] text-orange uppercase tracking-[2px]">
+          <p className="font-mono text-[10px] text-brand-gray-600 uppercase tracking-[2px]">
             Career Path
           </p>
           <div className="mt-4 space-y-2">
@@ -139,6 +140,6 @@ export default function About() {
         </section>
       </main>
       <Footer />
-    </>
+    </PageTransition>
   );
 }
